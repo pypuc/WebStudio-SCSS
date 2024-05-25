@@ -1,0 +1,154 @@
+.activity {
+  background-color: var(--background-color2);
+}
+
+.acti-item:first-child::before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 70px;
+  background-image: url(../pictures/antenna.png);
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+  background-position: center;
+  box-sizing: content-box;
+  border-radius: 4px;
+}
+
+.acti-item:nth-child(2)::before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 70px;
+  background-image: url(../pictures/clock.png);
+  margin-bottom: 30px;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-repeat: no-repeat;
+  box-sizing: content-box;
+  background-position: center;
+  border-radius: 4px;
+}
+
+.acti-item:nth-child(3)::before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 70px;
+  background-image: url(../pictures/diagram.png);
+  margin-bottom: 30px;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-repeat: no-repeat;
+  box-sizing: content-box;
+  background-position: center;
+  border-radius: 4px;
+}
+
+.acti-item:nth-child(4)::before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 70px;
+  background-image: url(../pictures/astronaut.png);
+  margin-bottom: 30px;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-repeat: no-repeat;
+  box-sizing: content-box;
+  background-position: center;
+  border-radius: 4px;
+}
+
+.activity {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.acti-item::before {
+  background: var(--background-color3);
+}
+
+.activity-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.activity-photo {
+  width: 100%;
+  width: 370px;
+  height: 294px;
+  flex-shrink: 0;
+}
+
+.activity-subtitle {
+  color: var(--text-color1);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.activity-text {
+  color: var(--text-color2);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.activity-title {
+  color: var(--text-color1);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+/* work */
+
+.work-list {
+  margin-bottom: 94px;
+}
+
+.activity-item {
+  position: relative;
+}
+
+.activity-inscription {
+  color: var(--text-color3);
+  text-align: center;
+  padding-top: 27px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.container-absolut:hover {
+  background-color: var(--text-color2);
+}
+
+.container-absolut {
+  background-color: rgba(47, 48, 58, 0.8);
+  top: 224px;
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  flex-shrink: 0;
+}

@@ -1,5 +1,5 @@
 .costomers-icon {
-    fill: var(--icon-color);
+    fill: $icon-color;
     width: 170px;
     height: 92px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -7,12 +7,12 @@
   
   
   .costomer-tab:focus .costomers-icon {
-    fill: var(--accent-color);
-    outline: solid 1px var(--accent-color);
+    fill: $accent-color;
+    outline: solid 1px $accent-color;
   }
   
   .costomers-icon:hover {
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
   
   .costomers-list {
@@ -24,13 +24,13 @@
   }
   
   .costomers-item {
-    outline: solid 1px var(--icon-color);
+    outline: solid 1px $icon-color;
     border-radius: 5px;
     transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .costomers-item:hover {
-    outline: 1px solid var(--accent-color);
+    outline: 1px solid $accent-color;
   }
   
   .costomers-title {
@@ -39,6 +39,6 @@
     font-size: 36px;
     letter-spacing: 0.03em;
     text-align: center;
-    color: var(--text-color1);
+    color: $text-color1;
     margin-top: 94px;
   }

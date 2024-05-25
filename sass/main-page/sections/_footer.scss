@@ -1,5 +1,5 @@
 footer {
-    background-color: var(--background-color1);
+    background-color: $background-color1;
   }
   
   .footer-subtitle {
@@ -45,7 +45,7 @@ footer {
   }
   
   .footer-email {
-    color: var(--text-color4);
+    color: $text-color4;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
@@ -55,7 +55,7 @@ footer {
   }
   
   .footer-tel {
-    color: var(--text-color4);
+    color: $text-color4;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
@@ -67,7 +67,7 @@ footer {
   .footer-icon {
     width: 20px;
     height: 20px;
-    fill: var(--text-color3);
+    fill: $text-color3;
   }
   
   .footer-iteam {
@@ -84,11 +84,11 @@ footer {
   }
   
   .footer-iteam:hover {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
   }
   
   .footer-tab:focus .footer-iteam {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
   }
   
   .footer-list {
@@ -97,7 +97,7 @@ footer {
   }
   
   .footer-title {
-    color: var(--accent-color);
+    color: $accent-color;
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
@@ -105,7 +105,7 @@ footer {
   }
   
   .footer-span {
-    color: var(--text-color3);
+    color: $text-color3;
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
@@ -113,7 +113,7 @@ footer {
   }
   
   .footer-address {
-    color: var(--text-color3);
+    color: $text-color3;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
@@ -122,7 +122,7 @@ footer {
   }
 
   .data-buton {
-    color: var(--text-color3);
+    color: $text-color3;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -149,11 +149,11 @@ footer {
   .data-icon {
     width: 24px;
     height: 24px;
-    fill: var(--text-color3);
+    fill: $text-color3;
   }
   
   .data-title {
-    color: var(--background-color2);
+    color: $background-color2;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;

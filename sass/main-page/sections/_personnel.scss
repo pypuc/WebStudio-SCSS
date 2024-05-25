@@ -1,28 +1,28 @@
 .personnel {
-    background-color: var(--background-color3);
+    background-color: $background-color3;
   }
   
   .personnel-icon {
     width: 20px;
     height: 20px;
-    fill: var(--icon-color);
+    fill: $icon-color;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .personnel-iteam:hover .personnel-icon {
-    fill: var(--text-color3);
+    fill: $text-color3;
   }
   
   .personnel-tab:focus .personnel-icon {
-    fill: var(--text-color3);
+    fill: $text-color3;
   }
   
   .personnel-tab:focus .personnel-iteam {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
   }
   
   .personnel-iteam:hover {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
   }
   
   .personnel-list-svg {
@@ -54,7 +54,7 @@
   }
   
   .personnel-item {
-    background-color: var(--background-color2);
+    background-color: $background-color2;
     padding-bottom: 30px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -78,7 +78,7 @@
   }
   
   .personnel-title {
-    color: var(--text-color1);
+    color: $text-color1;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -87,7 +87,7 @@
   }
   
   .personnel-subtitle {
-    color: var(--text-color1);
+    color: $text-color1;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
@@ -95,7 +95,7 @@
   }
   
   .personnel-name {
-    color: var(--text-color2);
+    color: $text-color2;
     text-align: center;
     font-size: 16px;
     font-weight: 400;

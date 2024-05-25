@@ -1,5 +1,5 @@
 .activity {
-  background-color: var(--background-color2);
+  background-color: $background-color2;
 }
 
 .acti-item:first-child::before {
@@ -76,7 +76,7 @@
 }
 
 .acti-item::before {
-  background: var(--background-color3);
+  background: $background-color3;
 }
 
 .activity-list {
@@ -93,7 +93,7 @@
 }
 
 .activity-subtitle {
-  color: var(--text-color1);
+  color: $text-color1;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -102,7 +102,7 @@
 }
 
 .activity-text {
-  color: var(--text-color2);
+  color: $text-color2;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -110,7 +110,7 @@
 }
 
 .activity-title {
-  color: var(--text-color1);
+  color: $text-color1;
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -129,7 +129,7 @@
 }
 
 .activity-inscription {
-  color: var(--text-color3);
+  color: $text-color3;
   text-align: center;
   padding-top: 27px;
   font-size: 14px;
@@ -141,7 +141,7 @@
 }
 
 .container-absolut:hover {
-  background-color: var(--text-color2);
+  background-color: $text-color2;
 }
 
 .container-absolut {

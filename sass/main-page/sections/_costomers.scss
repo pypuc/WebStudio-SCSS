@@ -1,44 +1,43 @@
-.costomers-icon {
-    fill: $icon-color;
-    width: 170px;
-    height: 92px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  
-  .costomer-tab:focus .costomers-icon {
-    fill: $accent-color;
-    outline: solid 1px $accent-color;
-  }
-  
-  .costomers-icon:hover {
-    fill: $accent-color;
-  }
-  
-  .costomers-list {
-    display: flex;
-    gap: 30px;
-    margin-bottom: 94px;
-    justify-content: center;
-    margin-top: 50px;
-  }
-  
-  .costomers-item {
-    outline: solid 1px $icon-color;
-    border-radius: 5px;
-    transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .costomers-item:hover {
-    outline: 1px solid $accent-color;
-  }
-  
-  .costomers-title {
-    font-family: "Roboto";
-    font-weight: 700;
-    font-size: 36px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: $text-color1;
-    margin-top: 94px;
-  }
+.costomers__icon {
+  fill: $icon-color;
+  width: 170px;
+  height: 92px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.costomer__tab:focus .costomers__icon {
+  fill: $accent-color;
+  outline: solid 1px $accent-color;
+}
+
+.costomers__icon:hover {
+  fill: $accent-color;
+}
+
+.costomers__list {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 94px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.costomers__item {
+  outline: solid 1px $icon-color;
+  border-radius: 5px;
+  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.costomers__item:hover {
+  outline: 1px solid $accent-color;
+}
+
+.costomers__title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: $text-color1;
+  margin-top: 94px;
+}

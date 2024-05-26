@@ -1,8 +1,10 @@
 .activity {
   background-color: $background-color2;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.activity-subitem:first-child::before {
+.activity__subitem:first-child::before {
   content: "";
   display: block;
   width: 70px;
@@ -19,7 +21,7 @@
   border-radius: 4px;
 }
 
-.activity-subitem:nth-child(2)::before {
+.activity__subitem:nth-child(2)::before {
   content: "";
   display: block;
   width: 70px;
@@ -36,7 +38,7 @@
   border-radius: 4px;
 }
 
-.activity-subitem:nth-child(3)::before {
+.activity__subitem:nth-child(3)::before {
   content: "";
   display: block;
   width: 70px;
@@ -53,7 +55,7 @@
   border-radius: 4px;
 }
 
-.activity-subitem:nth-child(4)::before {
+.activity__subitem:nth-child(4)::before {
   content: "";
   display: block;
   width: 70px;
@@ -70,29 +72,24 @@
   border-radius: 4px;
 }
 
-.activity {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.activity-subitem::before {
+.activity__subitem::before {
   background: $background-color3;
 }
 
-.activity-list {
+.activity__list {
   display: flex;
   gap: 30px;
   justify-content: center;
 }
 
-.activity-photo {
+.activity__photo {
   width: 100%;
   width: 370px;
   height: 294px;
   flex-shrink: 0;
 }
 
-.activity-subtitle {
+.activity__subtitle {
   color: $text-color1;
   font-size: 14px;
   font-weight: 700;
@@ -101,7 +98,7 @@
   margin-bottom: 10px;
 }
 
-.activity-text {
+.activity__text {
   color: $text-color2;
   font-size: 14px;
   font-weight: 400;
@@ -109,7 +106,7 @@
   letter-spacing: 0.03em;
 }
 
-.activity-title {
+.activity__title {
   color: $text-color1;
   text-align: center;
   font-size: 36px;
@@ -120,15 +117,15 @@
 
 /* activity-2 */
 
-.activity-sublist {
+.activity__sublist {
   margin-bottom: 94px;
 }
 
-.activity-item {
+.activity__item {
   position: relative;
 }
 
-.activity-inscription {
+.activity__inscription {
   color: $text-color3;
   text-align: center;
   padding-top: 27px;
@@ -140,11 +137,11 @@
   text-transform: uppercase;
 }
 
-.container-absolut:hover {
+.activity__container:hover {
   background-color: $text-color2;
 }
 
-.container-absolut {
+.activity__container {
   background-color: rgba(47, 48, 58, 0.8);
   top: 224px;
   position: absolute;

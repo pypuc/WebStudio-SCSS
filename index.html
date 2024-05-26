@@ -14,45 +14,45 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./style/reset.css" />
-    <link rel="stylesheet" href="./style/index.css" />
-    <link rel="stylesheet" href="./style/modal.css" />
+    <link rel="stylesheet" href="./sass/base/_reset.scss" />
+    <link rel="stylesheet" href="./sass/main.scss" />
+    <link rel="stylesheet" href="./sass/base/_comon.scss" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./dist/css/main.min.css">
   </head>
   <body>
     <!--header-->
     <header class="header">
-      <div class="container header_container">
-        <h2 class="header-title">Web<span class="header-span">Studio</span></h2>
-        <ul class="header-list">
-          <li class="header-item">
-            <a href="./index.html" class="header-link after-link">Студія</a>
+      <div class="container header__container">
+        <h2 class="header__title">Web<span class="header__span">Studio</span></h2>
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="./index.html" class="header__link header__after">Студія</a>
           </li>
-          <li class="header-item">
-            <a href="./pages/portfolio.html" class="header-link">Портфоліо</a>
+          <li class="header__item">
+            <a href="./pages/portfolio.html" class="header__link">Портфоліо</a>
           </li>
-          <li class="header-item">
-            <a href="./pages/contactys.html" class="header-link">Контакти</a>
+          <li class="header__item">
+            <a href="./pages/contactys.html" class="header__link">Контакти</a>
           </li>
         </ul>
-        <ul class="header-list-adres">
-          <li class="header-item header-item-ader">
+        <ul class="header__listadres">
+          <li class="header__item header__itemader">
             <a href="#">
-              <svg class="header-icon-post">
+              <svg class="header__iconpost">
                 <use href="./pictures/symbol-defs.svg#icon-envelope"></use>
               </svg>
-              <a href="mailto:info@devstudio.com" class="header-email"
+              <a href="mailto:info@devstudio.com" class="header__email"
                 >info@devstudio.com
               </a>
             </a>
           </li>
-          <li class="header-item header-item-ader">
-            <a href="#" class="header-tab">
-              <svg class="header-icon-tel">
+          <li class="header__item header__itemader">
+            <a href="#" class="header__tab">
+              <svg class="header__icontel">
                 <use href="./pictures/symbol-defs.svg#icon-smartphone"></use>
               </svg>
-              <a href="tel:+380961111111" class="header-tel">+380961111111</a>
+              <a href="tel:+380961111111" class="header__tel">+380961111111</a>
             </a>
           </li>
         </ul>
@@ -62,12 +62,12 @@
       <!--hero-->
       <section class="hero">
         <div class="container">
-          <ul class="hero-list">
-            <li class="hero-iteam">
-              <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <ul class="hero__list">
+            <li class="hero__iteam">
+              <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
             </li>
-            <li class="hero-iteam">
-              <button type="button" data-modal-open class="hero-button">
+            <li class="hero__iteam">
+              <button type="button" data__modal__open class="hero__button">
                 Замовити послугу
               </button>
             </li>
@@ -77,32 +77,32 @@
       <!--activity-->
       <section class="activity">
         <div class="container">
-          <ul class="activity-list">
-            <li class="activity-item acti-item" data-aos="flip-up" data-aos-duration="3000">
-              <h3 class="activity-subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="activity-text">
+          <ul class="activity__list">
+            <li class="activity__item activity__subitem" data-aos="flip-up" data-aos-duration="3000">
+              <h3 class="activity__subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="activity__text">
                 Ідейні міркування, і навіть початок<br />
                 повсякденної роботи з формування<br />
                 позиції.
               </p>
             </li>
-            <li class="activity-item acti-item" data-aos="flip-up" data-aos-duration="3000">
-              <h3 class="activity-subtitle">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="activity-text">
+            <li class="activity__item activity__subitem" data-aos="flip-up" data-aos-duration="3000">
+              <h3 class="activity__subtitle">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="activity__text">
                 Завдання організації, особливо рамки<br />
                 і місце навчання кадрів тягне у себе.
               </p>
             </li>
-            <li class="activity-item acti-item" data-aos="flip-up" data-aos-duration="3000">
-              <h3 class="activity-subtitle">ПЛАНУВАННЯ</h3>
-              <p class="activity-text">
+            <li class="activity__item activity__subitem" data-aos="flip-up" data-aos-duration="3000">
+              <h3 class="activity__subtitle">ПЛАНУВАННЯ</h3>
+              <p class="activity__text">
                 Так само консультація з широким<br />
                 активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="activity-item acti-item" data-aos="flip-up" data-aos-duration="3000">
-              <h3 class="activity-subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="activity-text">
+            <li class="activity__item activity__subitem" data-aos="flip-up" data-aos-duration="3000">
+              <h3 class="activity__subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="activity__text">
                 Значимість цих проблем настільки<br />
                 очевидна, що реалізація планових<br />
                 завдань.
@@ -111,11 +111,11 @@
           </ul>
         </div>
       </section>
-      <!-- work -->
+      <!-- activity-2 -->
       <section class="work">
         <div class="container">
-          <h2 class="activity-title">Чим ми займаємося</h2>
-          <ul class="activity-list work-list">
+          <h2 class="activity__title">Чим ми займаємося</h2>
+          <ul class="activity__list activity__sublist">
             <li class="activity-item" data-aos="fade-down-right" data-aos-duration="2000">
               <img
                 class="activity-photo"

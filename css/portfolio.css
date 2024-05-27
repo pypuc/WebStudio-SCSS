@@ -360,11 +360,11 @@ header {
   fill: #2196f3;
 }
 
-.header-item-ader:hover .header-icon-post {
+.header__item-ader:hover .header__iconpost {
   fill: #2196f3;
 }
 
-.header-span {
+.header__span {
   color: #000;
   font-family: Raleway;
   font-size: 26px;
@@ -374,7 +374,7 @@ header {
   letter-spacing: 0.78px;
 }
 
-.header-title {
+.header__title {
   color: #2196f3;
   font-family: Raleway;
   font-size: 26px;
@@ -382,7 +382,7 @@ header {
   letter-spacing: 0.03em;
 }
 
-.header-link {
+.header__link {
   color: #212121;
   font-size: 14px;
   font-weight: 500;
@@ -391,11 +391,11 @@ header {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-link:hover {
+.header__link:hover {
   color: #2196f3;
 }
 
-.header-email {
+.header__email {
   color: #757575;
   font-size: 14px;
   font-weight: 500;
@@ -405,15 +405,15 @@ header {
   align-items: center;
 }
 
-.header-email:hover {
+.header__email:hover {
   color: #2196f3;
 }
 
-.header-tel:hover {
+.header__tel:hover {
   color: #2196f3;
 }
 
-.header-tel {
+.header__tel {
   color: #757575;
   font-size: 14px;
   font-weight: 500;
@@ -475,20 +475,20 @@ header {
   max-width: 322px;
 }
 
-.hero__item-photo {
+.hero__itemphoto {
   flex-basis: calc((100% - 60px) / 3);
   border: 1px solid #eee;
   padding-bottom: 20px;
   position: relative;
 }
 
-.hero__item-photo:hover .hero__ovlarey {
+.hero__itemphoto:hover .hero__ovlarey {
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: scaleY(1);
 }
 
-.hero__item-photo:hover {
+.hero__itemphoto:hover {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
@@ -543,9 +543,11 @@ header {
 
 footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.footer-subtitle {
+.footer__subtitle {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
@@ -556,27 +558,22 @@ footer {
   margin-bottom: 20px;
 }
 
-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.footer-container {
+.footer__container {
   display: flex;
 }
 
-.footer-subcontainer:nth-child(2) {
+.footer__subcontainer:nth-child(2) {
   margin-left: 70px;
   margin-right: 93px;
 }
 
-.footer-icon {
+.footer__icon {
   width: 20px;
   height: 20px;
   fill: #fff;
 }
 
-.footer-iteam {
+.footer__iteam {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 25px;
   padding-top: 12px;
@@ -588,20 +585,20 @@ footer {
   flex-shrink: 0;
 }
 
-.footer-iteam:hover {
+.footer__iteam:hover {
   background-color: #2196f3;
 }
 
-.footer-tab:focus .footer-iteam {
+.footer__tab:focus .footer__iteam {
   background-color: #2196f3;
 }
 
-.footer-list {
+.footer__list {
   display: flex;
   gap: 10px;
 }
 
-.footer-title {
+.footer__title {
   color: #2196f3;
   font-family: Raleway;
   font-size: 26px;
@@ -609,7 +606,7 @@ footer {
   letter-spacing: 0.03em;
 }
 
-.footer-span {
+.footer__span {
   color: #fff;
   font-family: Raleway;
   font-size: 26px;
@@ -617,7 +614,7 @@ footer {
   letter-spacing: 0.03em;
 }
 
-.footer-address {
+.footer__address {
   color: #fff;
   font-size: 14px;
   font-weight: 400;
@@ -626,7 +623,7 @@ footer {
   margin-top: 20px;
 }
 
-.footer-email {
+.footer__email {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-weight: 400;
@@ -636,7 +633,7 @@ footer {
   display: block;
 }
 
-.footer-tel {
+.footer__tel {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-weight: 400;
@@ -646,7 +643,7 @@ footer {
   display: block;
 }
 
-.data-buton {
+.data__buton {
   color: #fff;
   font-size: 16px;
   font-style: normal;
@@ -667,17 +664,17 @@ footer {
   padding-top: 10px;
 }
 
-.data-container {
+.data__container {
   display: flex;
 }
 
-.data-icon {
+.data__icon {
   width: 24px;
   height: 24px;
   fill: #fff;
 }
 
-.data-title {
+.data__title {
   color: #fff;
   font-size: 14px;
   font-style: normal;
@@ -689,7 +686,7 @@ footer {
   margin-bottom: 20px;
 }
 
-.data-input {
+.data__input {
   width: 358px;
   height: 50px;
   border-radius: 4px;

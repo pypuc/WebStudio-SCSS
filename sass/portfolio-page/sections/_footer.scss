@@ -2,6 +2,10 @@ footer {
   background-color: $background-color2;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  &__container {
+    display: flex;
+  }
 }
 
 .footer__subtitle {
@@ -13,10 +17,6 @@ footer {
   color: #fff;
   margin-top: 12px;
   margin-bottom: 20px;
-}
-
-.footer__container {
-  display: flex;
 }
 
 .footer__subcontainer:nth-child(2) {

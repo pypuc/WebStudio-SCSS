@@ -2,150 +2,166 @@
   background-color: $background-color2;
   padding-top: 94px;
   padding-bottom: 94px;
+
+  &__list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  &__subitem:first-child::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-image: url(../pictures/antenna.png);
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+    background-position: center;
+    box-sizing: content-box;
+    border-radius: 4px;
+  }
+
+  &__subitem:nth-child(2)::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-image: url(../pictures/clock.png);
+    margin-bottom: 30px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-repeat: no-repeat;
+    box-sizing: content-box;
+    background-position: center;
+    border-radius: 4px;
+  }
+
+  &__subitem:nth-child(3)::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-image: url(../pictures/diagram.png);
+    margin-bottom: 30px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-repeat: no-repeat;
+    box-sizing: content-box;
+    background-position: center;
+    border-radius: 4px;
+  }
+
+  &__subitem:nth-child(4)::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-image: url(../pictures/astronaut.png);
+    margin-bottom: 30px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-repeat: no-repeat;
+    box-sizing: content-box;
+    background-position: center;
+    border-radius: 4px;
+  }
+
+  &__subitem::before {
+    background: $background-color3;
+  }
+
+  &__subtitle {
+    color: $text-color1;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    color: $text-color2;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 
-.activity__subitem:first-child::before {
-  content: "";
-  display: block;
-  width: 70px;
-  height: 70px;
-  background-image: url(../pictures/antenna.png);
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  background-repeat: no-repeat;
-  margin-bottom: 30px;
-  background-position: center;
-  box-sizing: content-box;
-  border-radius: 4px;
-}
+/* work */
 
-.activity__subitem:nth-child(2)::before {
-  content: "";
-  display: block;
-  width: 70px;
-  height: 70px;
-  background-image: url(../pictures/clock.png);
-  margin-bottom: 30px;
-  padding-right: 100px;
-  padding-left: 100px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  background-repeat: no-repeat;
-  box-sizing: content-box;
-  background-position: center;
-  border-radius: 4px;
-}
+.work {
+  background-color: $background-color2;
+  padding-top: 94px;
+  padding-bottom: 94px;
 
-.activity__subitem:nth-child(3)::before {
-  content: "";
-  display: block;
-  width: 70px;
-  height: 70px;
-  background-image: url(../pictures/diagram.png);
-  margin-bottom: 30px;
-  padding-right: 100px;
-  padding-left: 100px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  background-repeat: no-repeat;
-  box-sizing: content-box;
-  background-position: center;
-  border-radius: 4px;
-}
+  &__title {
+    color: $text-color1;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
 
-.activity__subitem:nth-child(4)::before {
-  content: "";
-  display: block;
-  width: 70px;
-  height: 70px;
-  background-image: url(../pictures/astronaut.png);
-  margin-bottom: 30px;
-  padding-right: 100px;
-  padding-left: 100px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  background-repeat: no-repeat;
-  box-sizing: content-box;
-  background-position: center;
-  border-radius: 4px;
-}
+  &__list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
 
-.activity__subitem::before {
-  background: $background-color3;
-}
+  &__sublist {
+    margin-bottom: 94px;
+  }
 
-.activity__list {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-}
+  &__item {
+    position: relative;
+  }
 
-.activity__photo {
-  width: 100%;
-  width: 370px;
-  height: 294px;
-  flex-shrink: 0;
-}
+  &__container:hover {
+    background-color: $text-color2;
+  }
 
-.activity__subtitle {
-  color: $text-color1;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
+  &__container {
+    background-color: rgba(47, 48, 58, 0.8);
+    top: 224px;
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    flex-shrink: 0;
+  }
 
-.activity__text {
-  color: $text-color2;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
+  &__inscription {
+    color: $text-color3;
+    text-align: center;
+    padding-top: 27px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
 
-.activity__title {
-  color: $text-color1;
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
-}
+  &__item {
+    position: relative;
+  }
 
-/* activity-2 */
-
-.activity__sublist {
-  margin-bottom: 94px;
-}
-
-.activity__item {
-  position: relative;
-}
-
-.activity__inscription {
-  color: $text-color3;
-  text-align: center;
-  padding-top: 27px;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
-}
-
-.activity__container:hover {
-  background-color: $text-color2;
-}
-
-.activity__container {
-  background-color: rgba(47, 48, 58, 0.8);
-  top: 224px;
-  position: absolute;
-  width: 370px;
-  height: 70px;
-  flex-shrink: 0;
+  &__photo {
+    width: 100%;
+    width: 370px;
+    height: 294px;
+    flex-shrink: 0;
+  }
 }

@@ -4,9 +4,7 @@
   padding-bottom: 94px;
 
   &__container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include flexbox($position-x: center);
   }
 
   &__title {
@@ -18,8 +16,7 @@
   }
 
   &__list {
-    display: flex;
-    gap: 30px;
+    @include flexbox($gap: 30px, $position-x: flex-start);
   }
 
   &__item {
@@ -53,9 +50,7 @@
   }
 
   &__listsvg {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
+    @include flexbox($gap: 10px);
     margin-top: 16px;
   }
 

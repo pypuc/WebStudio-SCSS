@@ -1,0 +1,65 @@
+/* work */
+
+.work {
+    background-color: $background-color2;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  
+    &__title {
+      color: $text-color1;
+      text-align: center;
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      margin-bottom: 50px;
+    }
+  
+    &__list {
+      @include flexbox($gap: 30px)
+    }
+  
+    &__sublist {
+      margin-bottom: 94px;
+    }
+  
+    &__item {
+      position: relative;
+    }
+  
+    &__container:hover {
+      background-color: $text-color2;
+    }
+  
+    &__container {
+      background-color: rgba(47, 48, 58, 0.8);
+      top: 224px;
+      position: absolute;
+      width: 370px;
+      height: 70px;
+      flex-shrink: 0;
+    }
+  
+    &__inscription {
+      color: $text-color3;
+      text-align: center;
+      padding-top: 27px;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.42px;
+      text-transform: uppercase;
+    }
+  
+    &__item {
+      position: relative;
+    }
+  
+    &__photo {
+      width: 100%;
+      width: 370px;
+      height: 294px;
+      flex-shrink: 0;
+    }
+  }
+  

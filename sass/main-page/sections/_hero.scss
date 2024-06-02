@@ -9,10 +9,8 @@
     url(../pictures/frends.png);
 
   &__list {
-    display: flex;
+    @include flexbox($position-x: flex-start, $position-y: center, $gap: 40px);
     flex-direction: column;
-    align-items: center;
-    gap: 40px;
   }
 
   &__title {

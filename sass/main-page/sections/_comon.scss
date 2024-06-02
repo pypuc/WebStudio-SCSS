@@ -8,6 +8,21 @@
   margin: 0 auto;
 }
 
+@keyframes foter-open {
+  0% {
+    transform: translateX(-500px);
+  }
+
+  50% {
+    transform: translateX(-250px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
 
 button,
 a:focus {

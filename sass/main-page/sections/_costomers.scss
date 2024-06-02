@@ -12,11 +12,9 @@
   }
 
   &__list {
-    display: flex;
-    gap: 30px;
     margin-bottom: 94px;
-    justify-content: center;
     margin-top: 50px;
+    @include flexbox($gap: 30px);
   }
 
   &__tab:focus &__icon {

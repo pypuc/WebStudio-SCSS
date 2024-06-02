@@ -8,9 +8,8 @@ header {
     transform: translate(-50%);
     width: 100%;
     z-index: 3;
-  }
   
-  .header__after::after {
+  &__after::after {
     opacity: 1;
     content: "";
     display: block;
@@ -22,12 +21,12 @@ header {
     border-radius: 2px;
   }
   
-  .header__container {
+  &__container {
     display: flex;
     justify-content: center;
   }
   
-  .header__list {
+  &__list {
     display: flex;
     gap: 50px;
     margin-right: 318px;
@@ -35,37 +34,37 @@ header {
     align-items: center;
   }
   
-  .header__iconpost {
+  &__iconpost {
     width: 16px;
     height: 12px;
     fill: $text-color2;
   }
   
-  .header__icontel {
+  &__icontel {
     width: 10px;
     height: 16px;
     fill: $text-color2;
   }
   
-  .header__listadres {
+  &__listadres {
     display: flex;
     gap: 30px;
   }
   
-  .header__itemader {
+  &__itemader {
     display: flex;
     align-items: center;
   }
   
-  .header__itemader:hover .header__icontel {
+  &__itemader:hover &__icontel {
     fill: $accent-color;
   }
   
-  .header__item-ader:hover .header__iconpost {
+  &__item-ader:hover &__iconpost {
     fill: $accent-color;
   }
   
-  .header__span {
+  &__span {
     color: $title-color;
   font-family: Raleway;
   font-size: 26px;
@@ -75,7 +74,7 @@ header {
   letter-spacing: 0.78px;
   }
   
-  .header__title {
+  &__title {
     color: $accent-color;
     font-family: Raleway;
     font-size: 26px;
@@ -83,7 +82,7 @@ header {
     letter-spacing: 0.03em;
   }
   
-  .header__link {
+  &__link {
     color: $text-color1;
     font-size: 14px;
     font-weight: 500;
@@ -92,11 +91,11 @@ header {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .header__link:hover {
+  &__link:hover {
     color: $accent-color;
   }
   
-  .header__email {
+  &__email {
     color: $text-color2;
     font-size: 14px;
     font-weight: 500;
@@ -106,15 +105,15 @@ header {
     align-items: center;
   }
   
-  .header__email:hover {
+  &__email:hover {
     color: $accent-color;
   }
   
-  .header__tel:hover {
+  &__tel:hover {
     color: $accent-color;
   }
   
-  .header__tel {
+  &__tel {
     color: $text-color2;
     font-size: 14px;
     font-weight: 500;
@@ -123,3 +122,4 @@ header {
     align-items: center;
     margin-left: 10px;
   }
+}

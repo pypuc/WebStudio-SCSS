@@ -8,9 +8,7 @@
     &__title {
       color: $text-color1;
       text-align: center;
-      font-size: 36px;
-      font-weight: 700;
-      letter-spacing: 0.03em;
+      @include title-style($font-size: 16px, $font-size: 36px);
       margin-bottom: 50px;
     }
   
@@ -43,11 +41,9 @@
       color: $text-color3;
       text-align: center;
       padding-top: 27px;
-      font-size: 14px;
       font-style: normal;
-      font-weight: 700;
       line-height: normal;
-      letter-spacing: 0.42px;
+      @include title-style($font-size: 14px, $letter-spacing: 0.42px);
       text-transform: uppercase;
     }
   

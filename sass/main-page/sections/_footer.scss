@@ -1,22 +1,17 @@
 footer {
   background-color: $background-color1;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   &__subtitle {
     font-family: "Roboto";
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.03em;
+    @include title-style($font-size: 14px);
     text-transform: uppercase;
     color: #fff;
     margin-top: 12px;
     margin-bottom: 20px;
   }
 
-  footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  
   &__container {
     display: flex;
     animation-name: foter-open;
@@ -31,20 +26,16 @@ footer {
 
   &__email {
     color: $text-color4;
-    font-size: 14px;
-    font-weight: 400;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     margin-top: 9px;
     display: block;
+    @include title-style($font-size: 14px, $font-weight: 400);
   }
 
   &__tel {
     color: $text-color4;
-    font-size: 14px;
-    font-weight: 400;
     line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include title-style($font-size: 14px, $font-weight: 400);
     margin-top: 9px;
     display: block;
   }
@@ -77,42 +68,32 @@ footer {
   }
 
   &__list {
-    display: flex;
-    gap: 10px;
+    @include flexbox($position-x: flex-start, $gap: 10px);
   }
 
   &__title {
     color: $accent-color;
     font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: 0.03em;
+    @include title-style($font-size: 26px, $letter-spacing: 0);
   }
 
   &__span {
     color: $text-color3;
     font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: 0.03em;
+    @include title-style($font-size: 26px);
   }
 
   &__address {
     color: $text-color3;
-    font-size: 14px;
-    font-weight: 400;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     margin-top: 20px;
+    @include title-style($font-size: 14px, $font-weight: 400);
   }
 
   &__buton {
     color: $text-color3;
-    font-size: 16px;
     font-style: normal;
-    font-weight: 700;
     line-height: 30px;
-    letter-spacing: 0.96px;
     width: 200px;
     height: 50px;
     border-radius: 4px;
@@ -121,10 +102,10 @@ footer {
     border: none;
     margin-left: 12px;
     padding-left: 28px;
-    display: flex;
     padding-right: 13px;
-    gap: 10px;
     padding-top: 10px;
+    @include flexbox($gap: 10px);
+    @include title-style($font-size: 16px, $letter-spacing: 0.96px);
   }
 
   &__container {
@@ -139,14 +120,12 @@ footer {
 
   &__title {
     color: $background-color2;
-    font-size: 14px;
     font-style: normal;
-    font-weight: 700;
     line-height: normal;
-    letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-top: 12px;
     margin-bottom: 20px;
+    @include title-style($font-size: 14px, $letter-spacing: 0.42px);
   }
 
   &__input {
@@ -157,11 +136,9 @@ footer {
     background-color: rgba(33, 150, 243, 0);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: rgba(255, 255, 255, 0.6);
-    font-size: 16px;
     font-style: normal;
-    font-weight: 400;
     line-height: 20px;
-    letter-spacing: 0.48px;
     padding-left: 16px;
+    @include title-style($font-size: 16px, $letter-spacing: 0.48px, $font-weight: 400);
   }
 }

@@ -3,19 +3,16 @@
   padding-bottom: 94px;
 
   &__list {
-    display: flex;
-    justify-content: center;
     gap: 8px;
+    @include flexbox($gap: 8px);
     margin-bottom: 50px;
   }
 
   &__link {
     color: $text-color1;
     text-align: center;
-    font-size: 16px;
-    font-weight: 500;
     line-height: 26px;
-    letter-spacing: 0.03em;
+    @include title-style($font-size: 16px, $font-weight: 500);
     background-color: #f5f4fa;
     padding-bottom: 6px;
     padding-top: 6px;
@@ -32,9 +29,7 @@
   }
 
   &__listphoto {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    @include flexbox($position-x: flex-start, $gap: 30px);
   }
 
   &__itemphoto {
@@ -66,9 +61,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexbox($position-y: center);
     opacity: 0;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -79,20 +72,16 @@
 
   &__ovartext {
     color: $text-color3;
-    font-size: 18px;
     font-style: normal;
-    font-weight: 400;
+    @include title-style($letter-spacing: 0.54px, $font-size: 18px, $font-weight: 400);
     line-height: 28px;
-    letter-spacing: 0.54px;
     max-width: 322px;
   }
 
   &__title {
     color: $text-color1;
-    font-size: 18px;
-    font-weight: 700;
     line-height: 2;
-    letter-spacing: 0.06em;
+    @include title-style($letter-spacing: 0.06em, $font-size: 18px);
     padding-left: 24px;
     padding-right: 24px;
     margin-bottom: 4px;
@@ -101,10 +90,8 @@
   
   &__text {
     color: $text-color2;
-    font-size: 16px;
-    font-weight: 400;
     line-height: 1.875;
-    letter-spacing: 0.03em;
+    @include title-style($font-weight: 400, $font-size: 16px);
     padding-left: 24px;
     padding-right: 24px;
   }

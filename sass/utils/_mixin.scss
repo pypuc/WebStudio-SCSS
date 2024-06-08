@@ -5,3 +5,9 @@
     align-items: $position-y;
     gap: $gap;
 }
+
+@mixin title-style($font-size: 26px, $font-weight: 700, $letter-spacing: 0.03em) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    letter-spacing: $letter-spacing;
+}

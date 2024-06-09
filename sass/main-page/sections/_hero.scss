@@ -1,7 +1,7 @@
 .hero {
   background-color: $background-color1;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 178px;
+  padding-bottom: 118px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -10,22 +10,23 @@
 
   &__list {
     @include flexbox($position-x: flex-start, $position-y: center, $gap: 40px);
-    flex-direction: column;
   }
 
   &__title {
     color: $text-color3;
     text-align: center;
-    line-height: 1.36;
-     @include title-style($font-size: 44px, $letter-spacing: 0.06em, $font-weight: 900);
     text-transform: uppercase;
-    width: 696px;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 42px; /* 161.538% */
+    letter-spacing: 1.56px;
+    @include title-style($font-size: 44px, $letter-spacing: 0.06em, $font-weight: 900);
   }
 
   &__button {
     text-align: center;
-    line-height: 1.87;
-    @include title-style($font-size: 16px, $letter-spacing: 0.06em);
+    line-height: 30px;
+    @include title-style($font-size: 16px, $letter-spacing: 0.96px);
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 32px;

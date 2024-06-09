@@ -9,13 +9,21 @@ header {
   z-index: 3;
 
   &__container {
-    @include flexbox($position-x: center);
+    display: none;
+    @media screen and (min-width: 768px) {
+    @include flexbox($gap: 0px);
+    }
   }
 
   &__list {
     margin-right: 318px;
     margin-left: 93px;
-    @include flexbox($position-x: flex-start, $position-y: center, $gap: 50px);
+    opacity: 0;
+    display: flex;
+      @include flexbox( $position-x: flex-start, $position-y: center, $gap: 50px);
+    @media screen and (min-width: 768px) {
+      opacity: 1;
+    }
   }
 
   &__listadres {
@@ -59,7 +67,18 @@ header {
 
   &__title {
     color: $accent-color;
-    @extend %text-styles;
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    @media screen and (min-width: 1200px) {
+      font-family: Raleway;
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+    }
   }
 
   &__link {

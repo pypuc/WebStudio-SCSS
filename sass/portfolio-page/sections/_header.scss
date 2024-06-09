@@ -1,6 +1,6 @@
 header {
   background-color: $background-color1;
-  border-bottom: 1px solid $line-color;
+  // border-bottom: 1px solid $line-color;
   padding-top: 24px;
   padding-bottom: 25px;
   position: fixed;
@@ -22,7 +22,7 @@ header {
   }
 
   &__container {
-    @include flexbox($gap: 0px);
+    @include flexbox;
   }
 
   &__list {

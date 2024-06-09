@@ -65,7 +65,7 @@
   &__text {
     color: $text-color2;
     line-height: 1.71;
-    @include title-style($font-size: 14px, $letter-spacing: 0.03em, $line-height: 1.71);
+  //  @include title-style($font-size: 14px, $line-height: 1.71);
   }
 }
 

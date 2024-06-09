@@ -1,11 +1,13 @@
-@import "./utils/variables";
+@import "./main-page/sections/variables";
 @import "./base/reset";
+@import "./utils/placeholders";
+@import "./utils/mixin";
+@import "./main-page/sections/comon";
 @import "./main-page/sections/header";
 @import "./main-page/sections/hero";
 @import "./main-page/sections/activity";
 @import "./main-page/sections/personnel";
 @import "./main-page/sections/costomers";
 @import "./main-page/sections/footer";
-@import "./utils/placeholders";
-@import "./utils/mixin";
+
 

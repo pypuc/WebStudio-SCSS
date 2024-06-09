@@ -3,9 +3,12 @@
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
+  width: 100%;
   outline: solid red;
   margin: 0 auto;
+  @media screen and (min-width: 375px) {
+    max-width: 450px;
+  }
 }
 
 @keyframes foter-open {

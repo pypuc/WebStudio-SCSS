@@ -21,6 +21,9 @@
     line-height: 42px; /* 161.538% */
     letter-spacing: 1.56px;
     @include title-style($font-size: 44px, $letter-spacing: 0.06em, $font-weight: 900);
+  @media screen and (min-width: 768px) {
+    
+  }
   }
 
   &__button {

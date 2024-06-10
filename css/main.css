@@ -395,9 +395,6 @@ header__itemader:hover header__icontel {
 header__itemader:hover header__iconpost {
   fill: #2196f3;
 }
-header .wrapper {
-  padding-top: 70px;
-}
 header__span {
   color: #000;
 }
@@ -462,6 +459,10 @@ header__tel {
   gap: 0px;
   margin-left: 10px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.wrapper {
+  padding-top: 70px;
 }
 
 .hero {

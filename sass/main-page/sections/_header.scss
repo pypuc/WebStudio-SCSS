@@ -1,6 +1,6 @@
-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+.header {
+  padding-top: 16px;
+  padding-bottom: 16px;
   position: fixed;
   left: 50%;
   transform: translate(-50%);
@@ -9,25 +9,30 @@ header {
   z-index: 3;
 
   &__container {
-    display: none;
     @media screen and (min-width: 768px) {
-    @include flexbox($gap: 0px);
+      @include flexbox($gap: 0px);
     }
   }
 
   &__list {
     margin-right: 318px;
     margin-left: 93px;
-    opacity: 0;
-    display: flex;
-      @include flexbox( $position-x: flex-start, $position-y: center, $gap: 50px);
+    display: none;
     @media screen and (min-width: 768px) {
-      opacity: 1;
+      display: flex;
     }
   }
 
   &__listadres {
-    @include flexbox($position-x: flex-start, $gap: 30px);
+    display: none;
+    @media screen and (min-width: 768px) {
+      @include flexbox($position-x: flex-start, $gap: 30px);
+      flex-direction: column;
+    }
+    @media screen and (min-width: 1200px) {
+      @include flexbox($position-x: flex-start, $gap: 30px);
+      flex-direction: row;
+    }
   }
 
   &__iconpost {

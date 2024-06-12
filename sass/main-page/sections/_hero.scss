@@ -1,6 +1,6 @@
 .hero {
   background-color: $background-color1;
-  padding-top: 178px;
+  padding-top: 118px;
   padding-bottom: 118px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -9,7 +9,7 @@
     url(../pictures/frends.png);
 
   &__list {
-    @include flexbox($position-x: flex-start, $position-y: center, $gap: 40px);
+    @include flexbox($position-y: center, $gap: 40px);
   }
 
   &__title {
@@ -20,10 +20,13 @@
     font-weight: 900;
     line-height: 42px; /* 161.538% */
     letter-spacing: 1.56px;
-    @include title-style($font-size: 44px, $letter-spacing: 0.06em, $font-weight: 900);
-  @media screen and (min-width: 768px) {
-    
-  }
+    @media screen and (min-width: 1200px) {
+      @include title-style(
+        $font-size: 44px,
+        $letter-spacing: 0.06em,
+        $font-weight: 900
+      );
+    }
   }
 
   &__button {
@@ -32,8 +35,8 @@
     @include title-style($font-size: 16px, $letter-spacing: 0.96px);
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 32px;
-    padding-left: 32px;
+    padding-right: 24px;
+    padding-left: 24px;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;

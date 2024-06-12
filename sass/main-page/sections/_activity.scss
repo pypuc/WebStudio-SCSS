@@ -1,20 +1,19 @@
 .activity {
   background-color: $background-color2;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   &__list {
-    @include flexbox($gap: 30px);
+    @include flexbox();
+    row-gap: 30px;
   }
 
   &__subitem:first-child::before {
     content: "";
     display: block;
-    width: 70px;
-    height: 70px;
     background-image: url(../pictures/antenna.png);
-    padding-left: 100px;
-    padding-right: 100px;
+    width: 450px;
+    height: 120px;
     padding-top: 25px;
     padding-bottom: 25px;
     background-repeat: no-repeat;
@@ -64,8 +63,5 @@
 
   &__text {
     color: $text-color2;
-    line-height: 1.71;
-  //  @include title-style($font-size: 14px, $line-height: 1.71);
   }
 }
-

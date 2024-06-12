@@ -9,6 +9,12 @@
   @media screen and (min-width: 375px) {
     max-width: 450px;
   }
+  @media screen and (min-width: 768px) {
+    max-width: 738px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1170px;
+  }
 }
 
 @keyframes foter-open {

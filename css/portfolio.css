@@ -70,6 +70,16 @@ img {
     max-width: 450px;
   }
 }
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 738px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
 
 @keyframes foter-open {
   0% {
@@ -300,7 +310,7 @@ body {
   flex-direction: column;
 }
 
-header {
+.header {
   background-color: #fff;
   padding-top: 24px;
   padding-bottom: 25px;
@@ -310,7 +320,7 @@ header {
   width: 100%;
   z-index: 3;
 }
-header__after::after {
+.header__after::after {
   opacity: 1;
   content: "";
   display: block;
@@ -321,14 +331,14 @@ header__after::after {
   bottom: -28px;
   border-radius: 2px;
 }
-header__container {
+.header__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
   gap: 0px;
 }
-header__list {
+.header__list {
   margin-right: 318px;
   margin-left: 93px;
   display: flex;
@@ -337,37 +347,37 @@ header__list {
   align-items: center;
   gap: 50px;
 }
-header__iconpost {
+.header__iconpost {
   width: 16px;
   height: 12px;
   fill: #757575;
 }
-header__icontel {
+.header__icontel {
   width: 10px;
   height: 16px;
   fill: #757575;
 }
-header__listadres {
+.header__listadres {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 30px;
 }
-header__itemader {
+.header__itemader {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   gap: 0px;
 }
-header__itemader:hover header__icontel {
+.header__itemader:hover .header__icontel {
   fill: #2196f3;
 }
-header__item-ader:hover header__iconpost {
+.header__item-ader:hover .header__iconpost {
   fill: #2196f3;
 }
-header__span {
+.header__span {
   color: #000;
   font-style: normal;
   line-height: normal;
@@ -375,13 +385,13 @@ header__span {
   font-weight: 700;
   letter-spacing: 0.78em;
 }
-header__title {
+.header__title {
   color: #2196f3;
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.03em;
 }
-header__link {
+.header__link {
   color: #212121;
   font-size: 14px;
   font-weight: 500;
@@ -389,10 +399,10 @@ header__link {
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-header__link:hover {
+.header__link:hover {
   color: #2196f3;
 }
-header__email {
+.header__email {
   color: #757575;
   font-size: 14px;
   font-weight: 500;
@@ -404,13 +414,13 @@ header__email {
   align-items: center;
   gap: 0px;
 }
-header__email:hover {
+.header__email:hover {
   color: #2196f3;
 }
-header__tel:hover {
+.header__tel:hover {
   color: #2196f3;
 }
-header__tel {
+.header__tel {
   color: #757575;
   font-size: 14px;
   font-weight: 500;

@@ -4,7 +4,7 @@
   padding-bottom: 60px;
 
   &__list {
-    @include flexbox();
+    @include flexbox($gap: 30px);
     row-gap: 30px;
   }
 
@@ -14,40 +14,66 @@
     background-image: url(../pictures/antenna.png);
     width: 450px;
     height: 120px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    background-repeat: no-repeat;
-    margin-bottom: 30px;
-    background-position: center;
-    box-sizing: content-box;
-    border-radius: 4px;
+    @extend %before-styles;
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 120px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      height: 120px;
+    }
   }
 
   &__subitem:nth-child(2)::before {
     content: "";
     display: block;
-    width: 70px;
-    height: 70px;
+    width: 450px;
+    height: 120px;
     background-image: url(../pictures/clock.png);
     @extend %before-styles;
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 120px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      height: 120px;
+    }
   }
 
   &__subitem:nth-child(3)::before {
     content: "";
     display: block;
-    width: 70px;
-    height: 70px;
+    width: 450px;
+    height: 120px;
     background-image: url(../pictures/diagram.png);
     @extend %before-styles;
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 120px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      height: 120px;
+    }
   }
 
   &__subitem:nth-child(4)::before {
     content: "";
     display: block;
-    width: 70px;
-    height: 70px;
+    width: 450px;
+    height: 120px;
     background-image: url(../pictures/astronaut.png);
     @extend %before-styles;
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 120px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      height: 120px;
+    }
   }
 
   &__subitem::before {
@@ -59,9 +85,15 @@
     @include title-style($font-size: 14px);
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-align: center;
   }
 
   &__text {
     color: $text-color2;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
   }
 }

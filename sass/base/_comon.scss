@@ -7,13 +7,13 @@
   outline: solid red;
   margin: 0 auto;
   @media screen and (min-width: 375px) {
-    max-width: 450px;
+    max-width: 480px;
   }
   @media screen and (min-width: 768px) {
-    max-width: 738px;
+    max-width: 768px;
   }
   @media screen and (min-width: 1200px) {
-    max-width: 1170px;
+    max-width: 1200px;
   }
 }
 

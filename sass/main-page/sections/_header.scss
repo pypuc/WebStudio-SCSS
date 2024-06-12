@@ -10,16 +10,22 @@
 
   &__container {
     @media screen and (min-width: 768px) {
-      @include flexbox($gap: 0px);
+      
     }
   }
 
   &__list {
-    margin-right: 318px;
-    margin-left: 93px;
     display: none;
+    gap: 50px;
     @media screen and (min-width: 768px) {
       display: flex;
+      margin-right: 96px;
+      margin-left: 88px;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      margin-right: 315px;
+      margin-left: 93px;
     }
   }
 

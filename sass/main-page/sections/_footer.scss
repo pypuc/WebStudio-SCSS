@@ -3,6 +3,13 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
+  &__adaptive {
+    gap: 0px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+
   &__subtitle {
     font-family: "Roboto";
     @include title-style($font-size: 14px);

@@ -899,6 +899,14 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer__adaptive {
+  gap: 0px;
+}
+@media screen and (min-width: 768px) {
+  .footer__adaptive {
+    display: flex;
+  }
+}
 .footer__subtitle {
   font-family: "Roboto";
   font-size: 14px;

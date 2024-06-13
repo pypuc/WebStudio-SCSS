@@ -9,12 +9,17 @@
 
   &__title {
     text-align: center;
-    margin-bottom: 50px;
-    @include title-style($font-size: 36px);
+    margin-bottom: 30px;
+    @include title-style($font-size: 28px, $letter-spacing: 0.84px);
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+      font-size: 36px;
+      letter-spacing: 1.08px;
+    }
   }
 
   &__list {
-    @include flexbox($gap: 30px, $position-x: flex-start);
+    @include flexbox($gap: 30px);
   }
 
   &__item {
@@ -69,19 +74,25 @@
   }
 
   &__photo {
-    width: 270px;
-    height: 260px;
+    width: 450px;
+    height: 460px;
     margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 374px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      height: 260px;
+    }
   }
-  
-  
-  
+
   &__subtitle {
     color: $text-color1;
     text-align: center;
     @include title-style($font-size: 16px, $font-weight: 500);
   }
-  
+
   &__name {
     color: $text-color2;
     text-align: center;

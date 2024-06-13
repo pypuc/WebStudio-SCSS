@@ -1,4 +1,4 @@
-footer {
+.footer {
   background-color: $background-color1;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -10,18 +10,41 @@ footer {
     color: #fff;
     margin-top: 12px;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+      justify-content: flex-start;
+    }
   }
 
   &__container {
     display: flex;
     animation-name: foter-open;
     animation-duration: 10s;
+    flex-direction: column;
+    align-items: center;
     animation-timing-function: cubic-bezier(0.61, 0.6, 0.65, 0.64);
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+    }
+  }
+
+  &__subcontainer:first-child {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0px;
+    }
   }
 
   &__subcontainer:nth-child(2) {
     margin-left: 70px;
     margin-right: 93px;
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0px;
+    }
   }
 
   &__email {
@@ -30,6 +53,11 @@ footer {
     margin-top: 9px;
     display: block;
     @include title-style($font-size: 14px, $font-weight: 400);
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+      justify-content: flex-start;
+    }
   }
 
   &__tel {
@@ -37,7 +65,11 @@ footer {
     line-height: 1.71;
     @include title-style($font-size: 14px, $font-weight: 400);
     margin-top: 9px;
-    display: block;
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+      justify-content: flex-start;
+    }
   }
 
   &__icon {
@@ -74,13 +106,14 @@ footer {
   &__title {
     color: $accent-color;
     font-family: Raleway;
-    @include title-style($font-size: 26px, $letter-spacing: 0);
+    @include title-style($letter-spacing: 0.72px, $font-size: 24px);
+    text-align: center;
   }
 
   &__span {
     color: $text-color3;
     font-family: Raleway;
-    @include title-style($font-size: 26px);
+    @include title-style($letter-spacing: 0.72px, $font-size: 24px);
   }
 
   &__address {
@@ -88,6 +121,23 @@ footer {
     line-height: 1.71;
     margin-top: 20px;
     @include title-style($font-size: 14px, $font-weight: 400);
+  }
+}
+
+.data {
+  &__title {
+    color: $background-color2;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    @include title-style($font-size: 14px, $letter-spacing: 0.42px);
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+      justify-content: flex-start;
+    }
   }
 
   &__buton {
@@ -100,32 +150,30 @@ footer {
     background: #2196f3;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;
+    margin-top: 20px;
     margin-left: 12px;
     padding-left: 28px;
     padding-right: 13px;
     padding-top: 10px;
     @include flexbox($gap: 10px);
     @include title-style($font-size: 16px, $letter-spacing: 0.96px);
+    @media screen and (min-width: 1200px) {
+      justify-content: flex-start;
+    }
   }
 
   &__container {
     display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+    }
   }
 
   &__icon {
     width: 24px;
     height: 24px;
     fill: $text-color3;
-  }
-
-  &__title {
-    color: $background-color2;
-    font-style: normal;
-    line-height: normal;
-    text-transform: uppercase;
-    margin-top: 12px;
-    margin-bottom: 20px;
-    @include title-style($font-size: 14px, $letter-spacing: 0.42px);
   }
 
   &__input {
@@ -139,6 +187,10 @@ footer {
     font-style: normal;
     line-height: 20px;
     padding-left: 16px;
-    @include title-style($font-size: 16px, $letter-spacing: 0.48px, $font-weight: 400);
+    @include title-style(
+      $font-size: 16px,
+      $letter-spacing: 0.48px,
+      $font-weight: 400
+    );
   }
 }

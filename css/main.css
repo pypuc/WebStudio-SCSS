@@ -1076,9 +1076,14 @@ body {
   font-weight: 700;
   letter-spacing: 0.96px;
 }
+.data__minicontainer {
+  display: flex;
+  justify-content: center;
+}
 @media screen and (min-width: 1200px) {
-  .data__buton {
+  .data__minicontainer {
     justify-content: flex-start;
+    align-items: center;
   }
 }
 .data__container {

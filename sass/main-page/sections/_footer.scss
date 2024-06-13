@@ -157,8 +157,14 @@
     padding-top: 10px;
     @include flexbox($gap: 10px);
     @include title-style($font-size: 16px, $letter-spacing: 0.96px);
+  }
+
+  &__minicontainer {
+    display: flex;
+    justify-content: center;
     @media screen and (min-width: 1200px) {
       justify-content: flex-start;
+      align-items: center;
     }
   }
 

@@ -1,10 +1,13 @@
-footer {
+.footer {
   background-color: $background-color2;
   padding-top: 60px;
   padding-bottom: 60px;
 
-  &__container {
-    display: flex;
+  &__adaptive {
+    gap: 0px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
   }
 
   &__subtitle {
@@ -14,19 +17,74 @@ footer {
     color: #fff;
     margin-top: 12px;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+      justify-content: flex-start;
+    }
   }
-  
+
+  &__container {
+    display: flex;
+    animation-name: foter-open;
+    animation-duration: 10s;
+    flex-direction: column;
+    align-items: center;
+    animation-timing-function: cubic-bezier(0.61, 0.6, 0.65, 0.64);
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+    }
+  }
+
+  &__subcontainer:first-child {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0px;
+    }
+  }
+
   &__subcontainer:nth-child(2) {
     margin-left: 70px;
     margin-right: 93px;
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0px;
+    }
   }
-  
+
+  &__email {
+    color: $text-color4;
+    line-height: 1.71;
+    margin-top: 9px;
+    display: block;
+    @include title-style($font-size: 14px, $font-weight: 400);
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__tel {
+    color: $text-color4;
+    line-height: 1.71;
+    @include title-style($font-size: 14px, $font-weight: 400);
+    margin-top: 9px;
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+      justify-content: flex-start;
+    }
+  }
+
   &__icon {
     width: 20px;
     height: 20px;
     fill: $text-color3;
   }
-  
+
   &__iteam {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 25px;
@@ -37,55 +95,59 @@ footer {
     width: 44px;
     height: 44px;
     flex-shrink: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
+
   &__iteam:hover {
     background-color: $accent-color;
   }
-  
+
   &__tab:focus &__iteam {
     background-color: $accent-color;
   }
-  
+
   &__list {
     @include flexbox($position-x: flex-start, $gap: 10px);
   }
-  
+
   &__title {
     color: $accent-color;
     font-family: Raleway;
-    @include title-style($letter-spacing: 0.03em);
+    @include title-style($letter-spacing: 0.72px, $font-size: 24px);
+    text-align: center;
   }
-  
+
   &__span {
     color: $text-color3;
     font-family: Raleway;
-    @include title-style($letter-spacing: 0.03em);
+    @include title-style($letter-spacing: 0.72px, $font-size: 24px);
   }
-  
+
   &__address {
+    text-align: center;
     color: $text-color3;
     line-height: 1.71;
-    @include title-style($font-size: 14px, $font-weight: 400);
     margin-top: 20px;
-  }
-  
-  &__email {
-    color: $text-color4;
-    line-height: 1.71;
     @include title-style($font-size: 14px, $font-weight: 400);
-    margin-top: 9px;
-    display: block;
   }
-  
-  &__tel {
-    color: $text-color4;
-    @include title-style($font-size: 14px, $font-weight: 400);
-    line-height: 1.71;
-    margin-top: 9px;
-    display: block;
+}
+
+.data {
+  &__title {
+    color: $background-color2;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    @include title-style($font-size: 14px, $letter-spacing: 0.42px);
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+      justify-content: flex-start;
+    }
   }
-  
+
   &__buton {
     color: $text-color3;
     font-style: normal;
@@ -93,37 +155,42 @@ footer {
     width: 200px;
     height: 50px;
     border-radius: 4px;
-    background-color: #2196f3;
+    background: #2196f3;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;
+    margin-top: 20px;
     margin-left: 12px;
     padding-left: 28px;
     padding-right: 13px;
     padding-top: 10px;
-    @include flexbox($position-x: flex-start, $gap: 10px);
-    @include title-style($font-size: 14px, $letter-spacing: 0.96px);
+    @include flexbox($gap: 10px);
+    @include title-style($font-size: 16px, $letter-spacing: 0.96px);
+    @media screen and (min-width: 1200px) {
+    }
   }
-  
+
+  &__minicontainer {
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+      @include flexbox($position-y: center, $position-x: flex-start);
+    }
+  }
+
   &__container {
     display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+    }
   }
-  
+
   &__icon {
     width: 24px;
     height: 24px;
     fill: $text-color3;
   }
-  
-  &__title {
-    color: $text-color3;
-    font-style: normal;
-    line-height: normal;
-    text-transform: uppercase;
-    margin-top: 12px;
-    margin-bottom: 20px;
-    @include title-style($font-size: 14px, $letter-spacing: 0.42px);
-  }
-  
+
   &__input {
     width: 358px;
     height: 50px;
@@ -135,6 +202,10 @@ footer {
     font-style: normal;
     line-height: 20px;
     padding-left: 16px;
-    @include title-style($font-size: 16px, $letter-spacing: 0.48px, $font-weight: 400);
+    @include title-style(
+      $font-size: 16px,
+      $letter-spacing: 0.48px,
+      $font-weight: 400
+    );
   }
 }

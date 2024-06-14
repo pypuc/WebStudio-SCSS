@@ -38,7 +38,7 @@
       row-gap: 10px;
     }
     @media screen and (min-width: 1200px) {
-      @include flexbox($position-x: flex-start, $gap: 30px);
+      @include flexbox($position-x: flex-start, $position-y: center, $gap: 30px);
       flex-direction: row;
     }
   }

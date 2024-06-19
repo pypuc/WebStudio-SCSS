@@ -107,7 +107,7 @@
   }
 
   &__list {
-    @include flexbox($position-x: flex-start, $gap: 10px);
+    @include flexbox($position-x: flex-start, $gap: 10px, $flex-wrap: nowrap);
   }
 
   &__title {
@@ -192,7 +192,7 @@
   }
 
   &__input {
-    width: 358px;
+    width: 100%;
     height: 50px;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -207,5 +207,8 @@
       $letter-spacing: 0.48px,
       $font-weight: 400
     );
+    @media screen and (min-width: 375px) {
+      width: 358px;
+    }
   }
 }

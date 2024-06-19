@@ -7,6 +7,10 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../pictures/frends.png);
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 
   &__list {
     @include flexbox($position-y: center, $gap: 40px);
@@ -27,6 +31,11 @@
         $font-weight: 900
       );
     }
+  }
+
+  &__tab {
+    display: flex;
+    justify-content: center;
   }
 
   &__button {

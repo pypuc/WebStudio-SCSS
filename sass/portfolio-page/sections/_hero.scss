@@ -8,7 +8,7 @@
 
   &__list {
     gap: 8px;
-    @include flexbox($gap: 8px);
+    @include flexbox($gap: 8px, $position-x: flex-start);
     margin-bottom: 50px;
     max-width: 330px;
     @media screen and (min-width: 768px) {
@@ -68,13 +68,14 @@
   &__photo {
     width: 450px;
     height: 294px;
+    @media screen and (max-width: 480px) {
+      width: 100%;
+    }
     @media screen and (min-width: 768px) {
       width: 354px;
-      height: 294px;
     }
     @media screen and (min-width: 1200px) {
       width: 370px;
-      height: 294px;
     }
   }
 

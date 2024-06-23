@@ -534,7 +534,7 @@ body {
   gap: 8px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   gap: 8px;
   margin-bottom: 50px;
@@ -598,16 +598,19 @@ body {
   width: 450px;
   height: 294px;
 }
+@media screen and (max-width: 480px) {
+  .hero__photo {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 768px) {
   .hero__photo {
     width: 354px;
-    height: 294px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__photo {
     width: 370px;
-    height: 294px;
   }
 }
 .hero__ovlarey {

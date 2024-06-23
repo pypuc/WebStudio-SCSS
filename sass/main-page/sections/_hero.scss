@@ -24,6 +24,7 @@
     font-weight: 900;
     line-height: 42px; /* 161.538% */
     letter-spacing: 1.56px;
+    margin-bottom: 30px;
     @media screen and (min-width: 1200px) {
       @include title-style(
         $font-size: 44px,

@@ -114,7 +114,9 @@
     color: $accent-color;
     font-family: Raleway;
     @include title-style($letter-spacing: 0.72px, $font-size: 24px);
-    text-align: center;
+    @media screen and (max-width: 1200px) {
+      text-align: center;
+    }
   }
 
   &__span {
@@ -165,8 +167,7 @@
     padding-top: 10px;
     @include flexbox($gap: 10px);
     @include title-style($font-size: 16px, $letter-spacing: 0.96px);
-    @media screen and (min-width: 1200px) {
-    }
+ 
   }
 
   &__minicontainer {

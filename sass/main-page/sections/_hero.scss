@@ -12,6 +12,12 @@
     padding-bottom: 200px;
   }
 
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__list {
     @include flexbox($position-y: center, $gap: 40px);
   }

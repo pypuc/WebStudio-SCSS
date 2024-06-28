@@ -369,6 +369,11 @@ body {
 }
 @media screen and (max-width: 768px) {
   .header__container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__container {
     justify-content: space-between;
   }
 }
@@ -538,6 +543,11 @@ body {
     padding-bottom: 200px;
   }
 }
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .hero__list {
   display: flex;
   flex-wrap: wrap;
@@ -608,12 +618,22 @@ body {
   gap: 30px;
   row-gap: 30px;
 }
+@media screen and (max-width: 480px) {
+  .activity__subitem {
+    width: 100%;
+  }
+}
 .activity__subitem:first-child::before {
   content: "";
   display: block;
   background-image: url(../pictures/antenna.png);
   width: 450px;
   height: 120px;
+}
+@media screen and (max-width: 480px) {
+  .activity__subitem:first-child::before {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 768px) {
   .activity__subitem:first-child::before {
@@ -634,6 +654,11 @@ body {
   height: 120px;
   background-image: url(../pictures/clock.png);
 }
+@media screen and (max-width: 480px) {
+  .activity__subitem:nth-child(2)::before {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 768px) {
   .activity__subitem:nth-child(2)::before {
     width: 354px;
@@ -653,6 +678,11 @@ body {
   height: 120px;
   background-image: url(../pictures/diagram.png);
 }
+@media screen and (max-width: 480px) {
+  .activity__subitem:nth-child(3)::before {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 768px) {
   .activity__subitem:nth-child(3)::before {
     width: 354px;
@@ -671,6 +701,11 @@ body {
   width: 450px;
   height: 120px;
   background-image: url(../pictures/astronaut.png);
+}
+@media screen and (max-width: 480px) {
+  .activity__subitem:nth-child(4)::before {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 768px) {
   .activity__subitem:nth-child(4)::before {
@@ -850,19 +885,17 @@ body {
 }
 .personnel__photo {
   width: 450px;
-  height: 460px;
+  height: auto;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .personnel__photo {
     width: 354px;
-    height: 374px;
   }
 }
 @media screen and (min-width: 1200px) {
   .personnel__photo {
     width: 270px;
-    height: 260px;
   }
 }
 .personnel__subtitle {

@@ -555,6 +555,11 @@ body {
   letter-spacing: 1.56px;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .hero__title {
+    max-width: 361px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;

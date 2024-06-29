@@ -162,6 +162,132 @@
   }
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  /*   width: 65%; */
+    flex-grow: 3;
+  }
+  .nav_menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav_burger {
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+  .nav_menu a{
+    font-size: 13px;
+    font-weight: 400;
+  }
+  input[type="checkbox"],
+  label {
+    display: none;
+  }
+  
+  /* join_block */
+  .join_block {
+    flex-grow: 1;
+    text-align: right;
+  }
+  .join {
+    background: none;
+    border: none;
+    padding: 0 20px;
+    transition: opacity .3s;
+  }
+  .started {
+    background: #ffcc01;
+    border: none;
+    border-radius: 6px;
+    padding: 14px 25px 13px;
+    transition: opacity .3s;
+  }
+  .join:hover,
+  .started:hover {
+    opacity: .7;
+    cursor: pointer;
+  }
+  
+  /* mobile menu */
+  @media (max-width: 768px) {
+    nav {
+      order: 1;
+    }
+    label {
+      display: block;
+      height: 30px;
+      width: 30px;
+      margin-left: auto;
+      position: relative;
+    }
+    label:hover {
+      cursor: pointer;
+    }
+    label span {
+      top: 15px;
+    }
+    label span,
+    label span::before,
+    label span::after {
+      content: '';
+      display: block;
+      width: 25px;
+      height: 2.5px;
+      background: #333;
+      position: absolute;
+      right: 0;
+      transition: .3s;
+    }
+    label span::before {
+      top: -5px;
+    }
+    label span::after {
+      top: 5px;
+    }
+    .nav_menu {
+      display: none;
+    }
+    input[type="checkbox"]:checked ~ .nav_menu{
+      display: flex;
+      flex-direction: column;
+    }
+    input[type="checkbox"]:checked ~ label span {
+      transform: rotate(-45deg);
+    }
+    input[type="checkbox"]:checked ~ label span::before {
+      top: 0;
+      transform: rotate(0);
+    }
+    input[type="checkbox"]:checked ~ label span::after {
+      top: 0;
+      transform: rotate(90deg);
+    }
+    .nav_menu {
+      // top: 100px;
+      left: 0px;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 12px 8px #ececec;
+      position: fixed;
+    }
+    .nav_menu li {
+      margin: 15px 0;
+    }
+  }
+
 .wrapper {
   padding-top: 70px;
 }

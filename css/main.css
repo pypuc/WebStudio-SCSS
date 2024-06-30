@@ -448,6 +448,9 @@ body {
 .header__span {
   color: #000;
 }
+.header__mobile {
+  height: 100vh;
+}
 .header__title {
   color: #2196f3;
   font-family: Raleway;
@@ -650,6 +653,13 @@ label {
   }
   .nav_menu {
     display: none;
+    height: 100vh;
+    pointer-events: none;
+    width: 300px;
+  }
+  input[type=checkbox] {
+    position: absolute;
+    z-index: 10;
   }
   input[type=checkbox]:checked ~ .nav_menu {
     display: flex;
@@ -668,9 +678,10 @@ label {
   }
   .nav_menu {
     position: absolute;
+    z-index: 1;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 300px;
     padding: 20px;
     background: #fff;
     box-shadow: 0 12px 8px #ececec;

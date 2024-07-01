@@ -14,14 +14,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!--header-->
     <header class="header">
       <div class="container header__container">
-        <h2 class="header__title">Web<span class="header__span">Studio</span></h2>
+        <h2 class="header__title">
+          Web<span class="header__span">Studio</span>
+        </h2>
         <ul class="header__list">
           <li class="header__item">
             <a href="./index.html" class="header__link header__after">Студія</a>
@@ -53,53 +55,95 @@
             </a>
           </li>
         </ul>
-         <!-- <button class="header__burger" data-burger-open>
-          <svg class="header__iconburger">
-            <use href="./pictures/symbol-defs.svg#icon-menu"></use>
-          </svg>
-        </button> -->
-        <input type="checkbox" id="toggle">
-        <label for="toggle">
-          <span></span>
-        </label>
-        <nav class="nav_menu">
-          <ul>
-            <li class="nav_menu_item">
-              <a href="#" class="nav_menu_link">About</a>
-            </li>
-            <li class="nav_menu_item">
-              <a href="#" class="nav_menu_link">Appartments</a>
-            </li>
-            <li class="nav_menu_item">
-              <a href="#" class="nav_menu_link">How it works</a>
-            </li>
-            <li class="nav_menu_item">
-              <a href="#" class="nav_menu_link">Agents</a>
-            </li>
-            <li class="nav_menu_item">
-              <a href="#" class="nav_menu_link">Contact us</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="mobile__menu">
+          <input type="checkbox" id="toggle" />
+          <label for="toggle">
+            <span></span>
+          </label>
+          <nav class="nav_menu">
+            <div class="burger">
+              <form action="">
+                <div class="burger__container">
+                  <ul class="burger__listt">
+                    <li class="burger__iteam">
+                      <a href="./index.html" class="burger__link">Студія</a>
+                    </li>
+                    <li class="burger__iteam">
+                      <a href="./page/portfolio.html" class="burger__link"
+                        >Портфоліо</a
+                      >
+                    </li>
+                    <li class="burger__iteam">
+                      <a href="./page/contactys.html" class="burger__link"
+                        >Контакти</a
+                      >
+                    </li>
+                  </ul>
+                  <button class="burger__close">
+                    <a href="./index.html">
+                      <svg class="burger__closeicon">
+                        <use href="./pictures/symbol-defs.svg#icon-closing"></use>
+                      </svg>
+                    </a>
+                  </button>
+                </div>
+                <ul class="burger__adrees">
+                  <li class="burger__subiteam">
+                    <a class="burger__tel" href="#">+38 096 111 11 11</a>
+                  </li>
+                  <li class="burger__subiteam">
+                    <a class="burger__email" href="#">info@devstudio.com</a>
+                  </li>
+                </ul>
+                <ul class="burger__sublist">
+                  <li class="burger__social">
+                    <a class="burger__instagram burger__cocmeregi" href="#"
+                      >Instagram</a
+                    >
+                  </li>
+                  <li class="burger__subsocial">
+                    <a class="burger__twitter burger__cocmeregi" href="#"
+                      >Twitter</a
+                    >
+                  </li>
+                  <li class="burger__social">
+                    <a class="burger__facebook burger__cocmeregi" href="#"
+                      >Facebook</a
+                    >
+                  </li>
+                  <li class="burger__subsocial">
+                    <a class="burger__linkedIn burger__cocmeregi" href="#"
+                      >LinkedIn</a
+                    >
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
     <main class="wrapper">
       <!--hero-->
       <section class="hero">
         <div class="container hero__container">
-              <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-              <a href="#" class="hero__tab">
-              <button type="button" data-modal-open class="hero__button">
-                Замовити послугу
-              </button>
-            </a>
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <a href="#" class="hero__tab">
+            <button type="button" data-modal-open class="hero__button">
+              Замовити послугу
+            </button>
+          </a>
         </div>
       </section>
       <!--activity-->
       <section class="activity">
         <div class="container">
           <ul class="activity__list">
-            <li class=" activity__subitem" data-aos="flip-up" data-aos-duration="3000">
+            <li
+              class="activity__subitem"
+              data-aos="flip-up"
+              data-aos-duration="3000"
+            >
               <h3 class="activity__subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="activity__text">
                 Ідейні міркування, і навіть початок<br />
@@ -107,25 +151,37 @@
                 позиції.
               </p>
             </li>
-            <li class=" activity__subitem" data-aos="flip-up" data-aos-duration="3000">
+            <li
+              class="activity__subitem"
+              data-aos="flip-up"
+              data-aos-duration="3000"
+            >
               <h3 class="activity__subtitle">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="activity__text">
                 Завдання організації, особливо рамки<br />
                 і місце навчання кадрів тягне у себе.
               </p>
             </li>
-            <li class=" activity__subitem" data-aos="flip-up" data-aos-duration="3000">
+            <li
+              class="activity__subitem"
+              data-aos="flip-up"
+              data-aos-duration="3000"
+            >
               <h3 class="activity__subtitle">ПЛАНУВАННЯ</h3>
               <p class="activity__text">
                 Так само консультація з широким<br />
                 активом значною мірою зумовлює.
               </p>
             </li>
-            <li class=" activity__subitem" data-aos="flip-up" data-aos-duration="3000">
+            <li
+              class="activity__subitem"
+              data-aos="flip-up"
+              data-aos-duration="3000"
+            >
               <h3 class="activity__subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="activity__text">
-                Значимість цих проблем настільки<br/>
-                очевидна, що реалізація планових<br/>
+                Значимість цих проблем настільки<br />
+                очевидна, що реалізація планових<br />
                 завдань.
               </p>
             </li>
@@ -137,7 +193,11 @@
         <div class="container">
           <h2 class="work__title">Чим ми займаємося</h2>
           <ul class="work__list work__sublist">
-            <li class="work__item" data-aos="fade-down-right" data-aos-duration="2000">
+            <li
+              class="work__item"
+              data-aos="fade-down-right"
+              data-aos-duration="2000"
+            >
               <img
                 class="work__photo"
                 src="./pictures/picture-1.png"
@@ -157,7 +217,11 @@
                 <h2 class="work__inscription">Мобільні додатки</h2>
               </div>
             </li>
-            <li class="work__item" data-aos="fade-down-left" data-aos-duration="2000">
+            <li
+              class="work__item"
+              data-aos="fade-down-left"
+              data-aos-duration="2000"
+            >
               <img
                 class="work__photo"
                 src="./pictures/picture-3.png"
@@ -175,7 +239,11 @@
         <div class="container personnel__container">
           <h2 class="personnel__title">Наша команда</h2>
           <ul class="personnel__list">
-            <li class="personnel__item" data-aos="fade-up" data-aos-duration="1500">
+            <li
+              class="personnel__item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <article class="personnel__article">
                 <img
                   src="./pictures/team-picture-1.webp"
@@ -224,7 +292,11 @@
                 </ul>
               </article>
             </li>
-            <li class="personnel__item" data-aos="fade-up" data-aos-duration="1500">
+            <li
+              class="personnel__item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <article class="personnel__article">
                 <img
                   src="./pictures/team-picture-2.webp"
@@ -273,7 +345,11 @@
                 </ul>
               </article>
             </li>
-            <li class="personnel__item" data-aos="fade-up" data-aos-duration="1500">
+            <li
+              class="personnel__item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <article class="personnel__article">
                 <img
                   src="./pictures/team-picture-3.webp"
@@ -322,7 +398,12 @@
                 </ul>
               </article>
             </li>
-            <li class="personnel__item" data-aos="fade-up" data-aos-duration="1500" data-aos-duration="1500">
+            <li
+              class="personnel__item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-duration="1500"
+            >
               <article class="personnel__article">
                 <img
                   src="./pictures/team-picture-4.webp"
@@ -380,42 +461,67 @@
           <h1 class="costomers__title">Постійні клієнти</h1>
           <ul class="costomers__list">
             <a href="#" class="costomer__tab">
-              <li class="costomers__item" data-aos="zoom-in-up" data-aos-duration="1500" data-aos-duration="1500">
+              <li
+                class="costomers__item"
+                data-aos="zoom-in-up"
+                data-aos-duration="1500"
+                data-aos-duration="1500"
+              >
                 <svg class="costomers__icon">
                   <use href="./pictures/symbol-defs.svg#icon-client-1"></use>
                 </svg>
               </li>
             </a>
             <a href="#" class="costomer__tab">
-              <li class="costomers__item" data-aos="zoom-in-up" data-aos-duration="1500">
+              <li
+                class="costomers__item"
+                data-aos="zoom-in-up"
+                data-aos-duration="1500"
+              >
                 <svg class="costomers__icon">
                   <use href="./pictures/symbol-defs.svg#icon-client-2"></use>
                 </svg>
               </li>
             </a>
             <a href="#" class="costomer__tab">
-              <li class="costomers__item" data-aos="zoom-in-up" data-aos-duration="1500">
+              <li
+                class="costomers__item"
+                data-aos="zoom-in-up"
+                data-aos-duration="1500"
+              >
                 <svg class="costomers__icon">
                   <use href="./pictures/symbol-defs.svg#icon-client-3"></use>
                 </svg>
               </li>
             </a>
             <a href="#" class="costomer__tab">
-              <li class="costomers__item" data-aos="zoom-in-up" data-aos-duration="1500">
+              <li
+                class="costomers__item"
+                data-aos="zoom-in-up"
+                data-aos-duration="1500"
+              >
                 <svg class="costomers__icon">
                   <use href="./pictures/symbol-defs.svg#icon-client-4"></use>
                 </svg>
               </li>
             </a>
             <a href="#" class="costomer__tab">
-              <li class="costomers__item" data-aos="zoom-in-up" data-aos-duration="1500">
+              <li
+                class="costomers__item"
+                data-aos="zoom-in-up"
+                data-aos-duration="1500"
+              >
                 <svg class="costomers__icon">
                   <use href="./pictures/symbol-defs.svg#icon-client-5"></use>
                 </svg>
               </li>
             </a>
             <a href="#" class="costomer__tab">
-              <li class="costomers__item" data-aos="zoom-in-up" data-aos-duration="1500">
+              <li
+                class="costomers__item"
+                data-aos="zoom-in-up"
+                data-aos-duration="1500"
+              >
                 <svg class="costomers__icon">
                   <use href="./pictures/symbol-defs.svg#icon-client-6"></use>
                 </svg>
@@ -429,71 +535,78 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__adaptive">
-        <div class="footer__subcontainer">
-          <h2 class="footer__title">
-            Web<span class="footer__span">Studio</span>
-          </h2>
-          <p class="footer__address">м. Київ, пр-т Лесі Українки, 26</p>
-          <a href="mailto:info@devstudio.com" class="footer__email"
-            >info@devstudio.com</a
-          >
-          <a href="tel:+380961111111" class="footer__tel">+38 096 111 11 11</a>
+          <div class="footer__subcontainer">
+            <h2 class="footer__title">
+              Web<span class="footer__span">Studio</span>
+            </h2>
+            <p class="footer__address">м. Київ, пр-т Лесі Українки, 26</p>
+            <a href="mailto:info@devstudio.com" class="footer__email"
+              >info@devstudio.com</a
+            >
+            <a href="tel:+380961111111" class="footer__tel"
+              >+38 096 111 11 11</a
+            >
+          </div>
+          <div class="footer__subcontainer">
+            <h2 class="footer__subtitle">приєднуйтесь</h2>
+            <ul class="footer__list">
+              <a href="#" class="footer__tab">
+                <li class="footer__iteam">
+                  <svg class="footer__icon">
+                    <use
+                      href="./pictures/symbol-defs.svg#icon-footer-instagram"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="#" class="footer__tab">
+                <li class="footer__iteam">
+                  <svg class="footer__icon">
+                    <use
+                      href="./pictures/symbol-defs.svg#icon-footer-twitter"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="#" class="footer__tab">
+                <li class="footer__iteam">
+                  <svg class="footer__icon">
+                    <use
+                      href="./pictures/symbol-defs.svg#icon-footer-facebook"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="#" class="footer__tab">
+                <li class="footer__iteam">
+                  <svg class="footer__icon">
+                    <use
+                      href="./pictures/symbol-defs.svg#icon-footer-linkedin"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+            </ul>
+          </div>
         </div>
-        <div class="footer__subcontainer">
-          <h2 class="footer__subtitle">приєднуйтесь</h2>
-          <ul class="footer__list">
-            <a href="#" class="footer__tab">
-              <li class="footer__iteam">
-                <svg class="footer__icon">
-                  <use
-                    href="./pictures/symbol-defs.svg#icon-footer-instagram"
-                  ></use>
-                </svg>
-              </li>
-            </a>
-            <a href="#" class="footer__tab">
-              <li class="footer__iteam">
-                <svg class="footer__icon">
-                  <use
-                    href="./pictures/symbol-defs.svg#icon-footer-twitter"
-                  ></use>
-                </svg>
-              </li>
-            </a>
-            <a href="#" class="footer__tab">
-              <li class="footer__iteam">
-                <svg class="footer__icon">
-                  <use
-                    href="./pictures/symbol-defs.svg#icon-footer-facebook"
-                  ></use>
-                </svg>
-              </li>
-            </a>
-            <a href="#" class="footer__tab">
-              <li class="footer__iteam">
-                <svg class="footer__icon">
-                  <use
-                    href="./pictures/symbol-defs.svg#icon-footer-linkedin"
-                  ></use>
-                </svg>
-              </li>
-            </a>
-          </ul>
-        </div>
-      </div>
         <div class="data">
           <form action="">
             <h2 class="data__title">Підпишіться на розсилку</h2>
             <div class="data__container">
-              <input required class="data__input" type="email" placeholder="E-mail" />
+              <input
+                required
+                class="data__input"
+                type="email"
+                placeholder="E-mail"
+              />
               <div class="data__minicontainer">
-              <button type="submit" class="data__buton">
-                Підписатися
-                <svg class="data__icon">
-                  <use href="./pictures/symbol-defs.svg#icon-flyerl"></use>
-                </svg>
-              </button>
-            </div>
+                <button type="submit" class="data__buton">
+                  Підписатися
+                  <svg class="data__icon">
+                    <use href="./pictures/symbol-defs.svg#icon-flyerl"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
           </form>
         </div>
@@ -504,12 +617,12 @@
       <div class="modal">
         <form action="">
           <a href="" class="modal__focus">
-          <button class="modal__button" data-modal-close type="button">       
-            <svg class="modal__closeicon">
-              <use href="./pictures/symbol-defs.svg#icon-closing"></use>
-            </svg>
-          </button>
-        </a>  
+            <button class="modal__button" data-modal-close type="button">
+              <svg class="modal__closeicon">
+                <use href="./pictures/symbol-defs.svg#icon-closing"></use>
+              </svg>
+            </button>
+          </a>
           <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
           <ul class="modal__list">
             <li class="modal__item modal__iteam-icon">
@@ -542,12 +655,12 @@
             <li class="modal__item">
               <label for="" class="modal__prefix">Коментар</label>
               <a href="#" class="modal__link-icon">
-              <input
-                type="text"
-                class="modal__fieldbig"
-                placeholder="Введіть текст"
-              />
-            </a>
+                <input
+                  type="text"
+                  class="modal__fieldbig"
+                  placeholder="Введіть текст"
+                />
+              </a>
             </li>
           </ul>
           <div class="chekbox">

@@ -543,6 +543,7 @@ body {
 @media screen and (min-width: 768px) {
   .hero__list {
     max-width: 100%;
+    justify-content: center;
   }
 }
 .hero__link {

@@ -51,11 +51,72 @@
             </a>
           </li>
         </ul>
-        <button class="header__burger">
-          <svg class="header__iconburger">
-            <use href="../pictures/symbol-defs.svg#icon-menu"></use>
-          </svg>
-          </button>
+        <div class="mobile__menu">
+          <input type="checkbox" id="toggle" />
+          <label for="toggle">
+            <span></span>
+          </label>
+          <nav class="nav_menu">
+            <div class="burger">
+              <form action="">
+                <div class="burger__container">
+                  <ul class="burger__listt">
+                    <li class="burger__iteam">
+                      <a href="./index.html" class="burger__link">Студія</a>
+                    </li>
+                    <li class="burger__iteam">
+                      <a href="./page/portfolio.html" class="burger__link"
+                        >Портфоліо</a
+                      >
+                    </li>
+                    <li class="burger__iteam">
+                      <a href="./page/contactys.html" class="burger__link"
+                        >Контакти</a
+                      >
+                    </li>
+                  </ul>
+                  <button class="burger__close">
+                    <a href="./index.html">
+                      <svg class="burger__closeicon">
+                        <use href="./pictures/symbol-defs.svg#icon-closing"></use>
+                      </svg>
+                    </a>
+                  </button>
+                </div>
+                <ul class="burger__adrees">
+                  <li class="burger__subiteam">
+                    <a class="burger__tel" href="#">+38 096 111 11 11</a>
+                  </li>
+                  <li class="burger__subiteam">
+                    <a class="burger__email" href="#">info@devstudio.com</a>
+                  </li>
+                </ul>
+                <ul class="burger__sublist">
+                  <li class="burger__social">
+                    <a class="burger__instagram burger__cocmeregi" href="#"
+                      >Instagram</a
+                    >
+                  </li>
+                  <li class="burger__subsocial">
+                    <a class="burger__twitter burger__cocmeregi" href="#"
+                      >Twitter</a
+                    >
+                  </li>
+                  <li class="burger__social">
+                    <a class="burger__facebook burger__cocmeregi" href="#"
+                      >Facebook</a
+                    >
+                  </li>
+                  <li class="burger__subsocial">
+                    <a class="burger__linkedIn burger__cocmeregi" href="#"
+                      >LinkedIn</a
+                    >
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
     <main class="wrapper">

@@ -46,11 +46,10 @@
   }
 
   &__subcontainer:nth-child(2) {
-    margin-left: 70px;
-    margin-right: 93px;
     margin-bottom: 60px;
     @media screen and (min-width: 768px) {
       margin-bottom: 0px;
+      margin-left: 70px;
     }
   }
 
@@ -108,13 +107,18 @@
 
   &__list {
     @include flexbox($position-x: flex-start, $gap: 10px);
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+    }
   }
 
   &__title {
     color: $accent-color;
     font-family: Raleway;
     @include title-style($letter-spacing: 0.72px, $font-size: 24px);
-    text-align: center;
+    @media screen and (min-width: 1200px) {
+      text-align: center;
+    }
   }
 
   &__span {
@@ -158,15 +162,15 @@
     background: #2196f3;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;
-    margin-top: 20px;
     margin-left: 12px;
     padding-left: 28px;
     padding-right: 13px;
     padding-top: 10px;
     @include flexbox($gap: 10px);
     @include title-style($font-size: 16px, $letter-spacing: 0.96px);
-    @media screen and (min-width: 1200px) {
-    }
+    @media screen and (max-width: 768px) {
+      margin-top: 20px;
+     }
   }
 
   &__minicontainer {

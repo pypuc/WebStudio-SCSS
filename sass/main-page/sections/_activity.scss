@@ -2,6 +2,10 @@
   background-color: $background-color2;
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__list {
     @include flexbox($gap: 30px);
@@ -103,7 +107,9 @@
     @include title-style($font-size: 14px);
     text-transform: uppercase;
     margin-bottom: 10px;
-    text-align: center;
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
   }
 
   &__text {

@@ -221,7 +221,7 @@ nav {
   border: none;
   margin-left: auto;
   padding-top: 20px;
-  padding-right: 10px;
+  padding-right: 15px;
   margin-bottom: auto;
   display: block;
   @media screen and (min-width: 768px) {
@@ -377,7 +377,6 @@ label {
   .nav_menu {
     display: none;
     height: 100vh;
-    pointer-events: none;
   }
   input[type="checkbox"] {
     position: absolute;

@@ -82,7 +82,9 @@
                   <button class="burger__close">
                     <a href="./index.html">
                       <svg class="burger__closeicon">
-                        <use href="./pictures/symbol-defs.svg#icon-closing"></use>
+                        <use
+                          href="./pictures/symbol-defs.svg#icon-closing"
+                        ></use>
                       </svg>
                     </a>
                   </button>
@@ -198,21 +200,39 @@
               data-aos="fade-down-right"
               data-aos-duration="2000"
             >
-              <img
-                class="work__photo"
-                src="./pictures/picture-1.png"
-                alt="picture-1"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./pictures/desktop/work-write@desktop-1px.webp 1x,
+                    ./pictures/desktop/work-write@desktop-2px.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="work__photo"
+                  src="./pictures/picture-1.png"
+                  alt="picture-1"
+                />
+              </picture>
               <div class="work__container">
                 <h2 class="work__inscription">Десктопні додатки</h2>
               </div>
             </li>
             <li class="work__item" data-aos="fade-up" data-aos-duration="2000">
-              <img
-                class="work__photo"
-                src="./pictures/picture-2.png"
-                alt="picture-2"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./pictures/desktop/work-phone@desktop-1px.webp 1x,
+                    ./pictures/desktop/work-phone@desktop-2px.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="work__photo"
+                  src="./pictures/picture-2.png"
+                  alt="picture-2"
+                />
+              </picture>
               <div class="work__container">
                 <h2 class="work__inscription">Мобільні додатки</h2>
               </div>
@@ -222,11 +242,20 @@
               data-aos="fade-down-left"
               data-aos-duration="2000"
             >
-              <img
-                class="work__photo"
-                src="./pictures/picture-3.png"
-                alt="picture-3"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./pictures/desktop/work-tablet@desktop-1px.webp 1x,
+                    ./pictures/desktop/work-tablet@desktop-2px.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="work__photo"
+                  src="./pictures/picture-3.png"
+                  alt="picture-3"
+                />
+              </picture>
               <div class="work__container">
                 <h2 class="work__inscription">Дизайнерські рішення</h2>
               </div>
@@ -245,11 +274,21 @@
               data-aos-duration="1500"
             >
               <article class="personnel__article">
-                <img
-                  src="./pictures/team-picture-1.webp"
-                  alt="team-picture-1"
-                  class="personnel__photo"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./pictures/desktop/personel-igor@desktop-1px.webp 1x,
+                      ./pictures/desktop/personel-igor@desktop-2
+                      px.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./pictures/team-picture-1.webp"
+                    alt="team-picture-1"
+                    class="personnel__photo"
+                  />
+                </picture>
                 <h3 class="personnel__subtitle">Ігор Дем'яненко</h3>
                 <p class="personnel__name">Product Designer</p>
                 <ul class="personnel__listsvg">

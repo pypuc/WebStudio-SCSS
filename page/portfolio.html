@@ -14,18 +14,22 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="../css/portfolio.min.css">
+    <link rel="stylesheet" href="../css/portfolio.min.css" />
   </head>
   <body>
     <header class="header">
       <div class="container header__container">
-        <h2 class="header__title">Web<span class="header__span">Studio</span></h2>
+        <h2 class="header__title">
+          Web<span class="header__span">Studio</span>
+        </h2>
         <ul class="header__list">
           <li class="header__item">
             <a href="../index.html" class="header__link">Студія</a>
           </li>
           <li class="header__item">
-            <a href="../page/portfolio.html" class="header__link header__after">Портфоліо</a>
+            <a href="../page/portfolio.html" class="header__link header__after"
+              >Портфоліо</a
+            >
           </li>
           <li class="header__item">
             <a href="../page/contactys.html" class="header__link">Контакти</a>
@@ -78,7 +82,9 @@
                   <button class="burger__close">
                     <a href="../page/portfolio.html">
                       <svg class="burger__closeicon">
-                        <use href="../pictures/symbol-defs.svg#icon-closing"></use>
+                        <use
+                          href="../pictures/symbol-defs.svg#icon-closing"
+                        ></use>
                       </svg>
                     </a>
                   </button>
@@ -143,11 +149,36 @@
           <ul class="hero__listphoto">
             <li class="hero__itemphoto">
               <article class="hero__article">
-                <img
-                  src="../pictures/img-1-portfolio.webp"
-                  alt="number1"
-                  class="hero__photo"
-                />
+                <picture>
+                  <source
+                    srcset="
+                    ../pictures/desktop/portfolio-pc@desktop-1px.webp 1x,
+                    ../pictures/desktop/portfolio-pc@desktop-2
+                    px.webp 2x
+                  "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ../pictures/tablet/portfolio-pc@tablet-1px.webp 1x,
+                      ../pictures/tablet/portfolio-pc@tablet-2px.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                ../pictures/mobile/portfolio-pc@mobile-1px.webp 1x,
+                ../pictures/mobile/portfolio-pc@mobile-2
+                px.webp 2x
+              "
+                    media="(max-width: 480px)"
+                  />
+                  <img
+                    src="../pictures/img-1-portfolio.webp"
+                    alt="number1"
+                    class="hero__photo"
+                  />
+                </picture>
                 <div class="hero__ovlarey">
                   <p class="hero__ovartext">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -161,11 +192,36 @@
             </li>
             <li class="hero__itemphoto">
               <article class="hero__article">
-                <img
-                  src="../pictures/img-2-portfolio.webp"
-                  alt="number2"
-                  class="hero__photo"
-                />
+                <picture>
+                  <source
+                    srcset="
+                    ../pictures/desktop/portfolio-basketbal@desktop-1px.webp 1x,
+                    ../pictures/desktop/portfolio-basketbal@desktop-2
+                    px.webp 2x
+                  "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ../pictures/tablet/portfolio-basketbal@tablet-1px.webp 1x,
+                      ../pictures/tablet/portfolio-basketbal@tablet-2px.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                ../pictures/mobile/portfolio-basketbal@mobile-1px.webp 1x,
+                ../pictures/mobile/portfolio-basketbal@mobile-2
+                px.webp 2x
+              "
+                    media="(max-width: 480px)"
+                  />
+                  <img
+                    src="../pictures/img-2-portfolio.webp"
+                    alt="number2"
+                    class="hero__photo"
+                  />
+                </picture>
                 <div class="hero__ovlarey">
                   <p class="hero__ovartext">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -179,11 +235,36 @@
             </li>
             <li class="hero__itemphoto">
               <article class="hero__article">
-                <img
-                  src="../pictures/img-3-portfolio.webp"
-                  alt="number3"
-                  class="hero__photo"
-                />
+                <picture>
+                  <source
+                    srcset="
+                    ../pictures/desktop/portfolio-fish@desktop-1px.webp 1x,
+                    ../pictures/desktop/portfolio-fish@desktop-2
+                    px.webp 2x
+                  "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ../pictures/tablet/portfolio-fish@tablet-1px.webp 1x,
+                      ../pictures/tablet/portfolio-fish@tablet-2px.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                ../pictures/mobile/portfolio-fish@mobile-1px.webp 1x,
+                ../pictures/mobile/portfolio-fish@mobile-2
+                px.webp 2x
+              "
+                    media="(max-width: 480px)"
+                  />
+                  <img
+                    src="../pictures/img-3-portfolio.webp"
+                    alt="number3"
+                    class="hero__photo"
+                  />
+                </picture>
                 <div class="hero__ovlarey">
                   <p class="hero__ovartext">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -197,11 +278,36 @@
             </li>
             <li class="hero__itemphoto">
               <article class="hero__article">
-                <img
-                  src="../pictures/img-4-portfolio.webp"
-                  alt="number4"
-                  class="hero__photo"
-                />
+                <picture>
+                  <source
+                    srcset="
+                  ../pictures/desktop/portfolio-headphones@desktop-1px.webp 1x,
+                  ../pictures/desktop/portfolio-headphones@desktop-2
+                  px.webp 2x
+                "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ../pictures/tablet/portfolio-headphones@tablet-1px.webp 1x,
+                      ../pictures/tablet/portfolio-headphones@tablet-2px.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+              ../pictures/mobile/portfolio-headphones@mobile-1px.webp 1x,
+              ../pictures/mobile/portfolio-headphones@mobile-2
+              px.webp 2x
+            "
+                    media="(max-width: 480px)"
+                  />
+                  <img
+                    src="../pictures/img-4-portfolio.webp"
+                    alt="number4"
+                    class="hero__photo"
+                  />
+                </picture>
                 <div class="hero__ovlarey">
                   <p class="hero__ovartext">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -215,11 +321,37 @@
             </li>
             <li class="hero__itemphoto">
               <article class="hero__article">
-                <img
-                  src="../pictures/img-5-portfolio.webp"
-                  alt="number5"
-                  class="hero__photo"
+                <picture>
+                  <source
+                  srcset="
+                  ../pictures/desktop/portfolio-box@desktop-1px.webp 1x,
+                  ../pictures/desktop/portfolio-box@desktop-2
+                  px.webp 2x
+                "
+                  media="(min-width: 1200px)"
                 />
+                <source
+                  srcset="
+                    ../pictures/tablet/portfolio-box@tablet-1px.webp 1x,
+                    ../pictures/tablet/portfolio-box@tablet-2px.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+              ../pictures/mobile/portfolio-box@mobile-1px.webp 1x,
+              ../pictures/mobile/portfolio-box@mobile-2
+              px.webp 2x
+            "
+                  media="(max-width: 480px)"
+                />
+                  <img
+                    src="../pictures/img-5-portfolio.webp"
+                    alt="number5"
+                    class="hero__photo"
+                  />
+                </picture>
+
                 <div class="hero__ovlarey">
                   <p class="hero__ovartext">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -311,71 +443,73 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__adaptive">
-        <div class="footer__subcontainer">
-          <h2 class="footer__title">
-            Web<span class="footer__span">Studio</span>
-          </h2>
-          <p class="footer__address">м. Київ, пр-т Лесі Українки, 26</p>
-          <a href="mailto:info@devstudio.com" class="footer__email"
-            >info@devstudio.com</a
-          >
-          <a href="tel:+380961111111" class="footer__tel">+38 096 111 11 11</a>
+          <div class="footer__subcontainer">
+            <h2 class="footer__title">
+              Web<span class="footer__span">Studio</span>
+            </h2>
+            <p class="footer__address">м. Київ, пр-т Лесі Українки, 26</p>
+            <a href="mailto:info@devstudio.com" class="footer__email"
+              >info@devstudio.com</a
+            >
+            <a href="tel:+380961111111" class="footer__tel"
+              >+38 096 111 11 11</a
+            >
+          </div>
+          <div class="footer__subcontainer">
+            <h2 class="footer__subtitle">приєднуйтесь</h2>
+            <ul class="footer__list">
+              <a href="#" class="footer__tab">
+                <li class="footer__iteam">
+                  <svg class="footer__icon">
+                    <use
+                      href="../pictures/symbol-defs.svg#icon-footer-instagram"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="#" class="footer__tab">
+                <li class="footer__iteam">
+                  <svg class="footer__icon">
+                    <use
+                      href="../pictures/symbol-defs.svg#icon-footer-twitter"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="#" class="footer__tab">
+                <li class="footer__iteam">
+                  <svg class="footer__icon">
+                    <use
+                      href="../pictures/symbol-defs.svg#icon-footer-facebook"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+              <a href="#" class="footer__tab">
+                <li class="footer__iteam">
+                  <svg class="footer__icon">
+                    <use
+                      href="../pictures/symbol-defs.svg#icon-footer-linkedin"
+                    ></use>
+                  </svg>
+                </li>
+              </a>
+            </ul>
+          </div>
         </div>
-        <div class="footer__subcontainer">
-          <h2 class="footer__subtitle">приєднуйтесь</h2>
-          <ul class="footer__list">
-            <a href="#" class="footer__tab">
-              <li class="footer__iteam">
-                <svg class="footer__icon">
-                  <use
-                    href="../pictures/symbol-defs.svg#icon-footer-instagram"
-                  ></use>
-                </svg>
-              </li>
-            </a>
-            <a href="#" class="footer__tab">
-              <li class="footer__iteam">
-                <svg class="footer__icon">
-                  <use
-                    href="../pictures/symbol-defs.svg#icon-footer-twitter"
-                  ></use>
-                </svg>
-              </li>
-            </a>
-            <a href="#" class="footer__tab">
-              <li class="footer__iteam">
-                <svg class="footer__icon">
-                  <use
-                    href="../pictures/symbol-defs.svg#icon-footer-facebook"
-                  ></use>
-                </svg>
-              </li>
-            </a>
-            <a href="#" class="footer__tab">
-              <li class="footer__iteam">
-                <svg class="footer__icon">
-                  <use
-                    href="../pictures/symbol-defs.svg#icon-footer-linkedin"
-                  ></use>
-                </svg>
-              </li>
-            </a>
-          </ul>
-        </div>
-      </div>
         <div class="data">
           <form action="">
             <h2 class="data__title">Підпишіться на розсилку</h2>
             <div class="data__container">
               <input class="data__input" type="email" placeholder="E-mail" />
               <div class="data__minicontainer">
-              <button type="submit" class="data__buton">
-                Підписатися
-                <svg class="data__icon">
-                  <use href="../pictures/symbol-defs.svg#icon-flyerl"></use>
-                </svg>
-              </button>
-            </div>
+                <button type="submit" class="data__buton">
+                  Підписатися
+                  <svg class="data__icon">
+                    <use href="../pictures/symbol-defs.svg#icon-flyerl"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
           </form>
         </div>

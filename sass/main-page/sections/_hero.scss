@@ -6,11 +6,31 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../pictures/frends.png);
+    url(../../../pictures/mobile/hero-family@mobiel-1px.webp);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../../../pictures/mobile/hero-family@mobiel-2px.webp);
+  }
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: url(../../../pictures/desktop/hero-family@desktop-1px.webp);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../../../pictures/desktop/hero-family@desktop-2px.webp);
+    }
   }
+
+    @media screen and (min-width: 768px) {
+    background-image: url(../../../pictures/tablet/hero-family@tablet-1px.webp);
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../../../pictures/tablet/hero-family@tablet-2px.webp);
+  }
+    }
 
   &__container {
     display: flex;
@@ -38,7 +58,7 @@
       @include title-style(
         $font-size: 44px,
         $letter-spacing: 0.06em,
-        $font-weight: 900 
+        $font-weight: 900
       );
       max-width: 696px;
     }

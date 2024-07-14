@@ -539,7 +539,8 @@ label {
   padding-top: 118px;
   padding-bottom: 118px;
   background-repeat: no-repeat;
-  background-image: url(../pictures/mobile/hero-family@mobiel-1px.webp);
+  background-position: center;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../pictures/mobile/hero-family@mobiel-1px.webp);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -548,7 +549,7 @@ label {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(../pictures/tablet/hero-family@tablet-1px.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../pictures/tablet/hero-family@tablet-1px.webp);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -560,7 +561,7 @@ label {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url(../pictures/desktop/hero-family@desktop-1px.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../pictures/desktop/hero-family@desktop-1px.webp);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {

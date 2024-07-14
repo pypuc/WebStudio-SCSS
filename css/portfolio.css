@@ -604,7 +604,7 @@ label {
 }
 .hero__photo {
   width: 450px;
-  height: auto;
+  height: 294px;
 }
 @media screen and (max-width: 480px) {
   .hero__photo {
